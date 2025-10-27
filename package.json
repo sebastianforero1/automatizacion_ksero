@@ -1,0 +1,27 @@
+{
+  "name": "automatizacion-ksero",
+  "version": "1.0.0",
+  "description": "Automatización de pruebas para aplicación Ksero",
+  "scripts": {
+    "test": "npx playwright test",
+    "test:headed": "npx playwright test --headed",
+    "test:debug": "npx playwright test --debug",
+    "test:report": "npx playwright show-report",
+    "test:ui": "npx playwright test --ui"
+  },
+  "keywords": [
+    "testing",
+    "playwright",
+    "e2e",
+    "qa"
+  ],
+  "author": "Sebastian Forero",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.56.1"
+  },
+  "main": "playwright.config.js",
+  "directories": {
+    "test": "tests"
+  }
+}

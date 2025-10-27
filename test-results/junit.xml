@@ -1,0 +1,662 @@
+<testsuites id="" name="" tests="40" failures="4" skipped="0" errors="0" time="252.79265000000004">
+<testsuite name="home.spec.js" timestamp="2025-10-27T22:16:13.190Z" hostname="chromium" tests="10" failures="1" skipped="0" time="41.016" errors="0">
+<testcase name="CP-01: Verificación de página de inicio › debe mostrar todos los elementos principales de la página de inicio" classname="home.spec.js" time="27.961">
+<failure message="home.spec.js:22:3 debe mostrar todos los elementos principales de la página de inicio" type="FAILURE">
+<![CDATA[  [chromium] › home.spec.js:22:3 › CP-01: Verificación de página de inicio › debe mostrar todos los elementos principales de la página de inicio › Verificar imagen hero 
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: locator('img[alt*="Ksero"]').first()
+    Expected: visible
+    Timeout: 5000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeVisible" with timeout 5000ms
+      - waiting for locator('img[alt*="Ksero"]').first()
+
+
+      89 |     await test.step('Verificar imagen hero', async () => {
+      90 |       const heroImage = page.locator('img[alt*="Ksero"]').first();
+    > 91 |       await expect(heroImage).toBeVisible();
+         |                               ^
+      92 |       
+      93 |       // Validación técnica: verificar que la imagen cargó correctamente
+      94 |       const imageLoaded = await heroImage.evaluate((img) => {
+        at C:\Users\sebas\OneDrive\Escritorio\automatizacion-ksero\tests\home.spec.js:91:31
+        at C:\Users\sebas\OneDrive\Escritorio\automatizacion-ksero\tests\home.spec.js:89:16
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\home-CP-01-Verificación-de-113c3-ales-de-la-página-de-inicio-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\home-CP-01-Verificación-de-113c3-ales-de-la-página-de-inicio-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\home-CP-01-Verificación-de-113c3-ales-de-la-página-de-inicio-chromium\error-context.md
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: locator('img[alt*="Ksero"]').first()
+    Expected: visible
+    Timeout: 5000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeVisible" with timeout 5000ms
+      - waiting for locator('img[alt*="Ksero"]').first()
+
+
+      89 |     await test.step('Verificar imagen hero', async () => {
+      90 |       const heroImage = page.locator('img[alt*="Ksero"]').first();
+    > 91 |       await expect(heroImage).toBeVisible();
+         |                               ^
+      92 |       
+      93 |       // Validación técnica: verificar que la imagen cargó correctamente
+      94 |       const imageLoaded = await heroImage.evaluate((img) => {
+        at C:\Users\sebas\OneDrive\Escritorio\automatizacion-ksero\tests\home.spec.js:91:31
+        at C:\Users\sebas\OneDrive\Escritorio\automatizacion-ksero\tests\home.spec.js:89:16
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\home-CP-01-Verificación-de-113c3-ales-de-la-página-de-inicio-chromium-retry1\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\home-CP-01-Verificación-de-113c3-ales-de-la-página-de-inicio-chromium-retry1\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\home-CP-01-Verificación-de-113c3-ales-de-la-página-de-inicio-chromium-retry1\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    ..\test-results\home-CP-01-Verificación-de-113c3-ales-de-la-página-de-inicio-chromium-retry1\trace.zip
+    Usage:
+
+        npx playwright show-trace ..\test-results\home-CP-01-Verificación-de-113c3-ales-de-la-página-de-inicio-chromium-retry1\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Retry #2 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: locator('img[alt*="Ksero"]').first()
+    Expected: visible
+    Timeout: 5000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeVisible" with timeout 5000ms
+      - waiting for locator('img[alt*="Ksero"]').first()
+
+
+      89 |     await test.step('Verificar imagen hero', async () => {
+      90 |       const heroImage = page.locator('img[alt*="Ksero"]').first();
+    > 91 |       await expect(heroImage).toBeVisible();
+         |                               ^
+      92 |       
+      93 |       // Validación técnica: verificar que la imagen cargó correctamente
+      94 |       const imageLoaded = await heroImage.evaluate((img) => {
+        at C:\Users\sebas\OneDrive\Escritorio\automatizacion-ksero\tests\home.spec.js:91:31
+        at C:\Users\sebas\OneDrive\Escritorio\automatizacion-ksero\tests\home.spec.js:89:16
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\home-CP-01-Verificación-de-113c3-ales-de-la-página-de-inicio-chromium-retry2\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\home-CP-01-Verificación-de-113c3-ales-de-la-página-de-inicio-chromium-retry2\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\home-CP-01-Verificación-de-113c3-ales-de-la-página-de-inicio-chromium-retry2\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|home-CP-01-Verificación-de-113c3-ales-de-la-página-de-inicio-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|home-CP-01-Verificación-de-113c3-ales-de-la-página-de-inicio-chromium\video.webm]]
+
+[[ATTACHMENT|home-CP-01-Verificación-de-113c3-ales-de-la-página-de-inicio-chromium\error-context.md]]
+
+[[ATTACHMENT|home-CP-01-Verificación-de-113c3-ales-de-la-página-de-inicio-chromium-retry1\test-failed-1.png]]
+
+[[ATTACHMENT|home-CP-01-Verificación-de-113c3-ales-de-la-página-de-inicio-chromium-retry1\video.webm]]
+
+[[ATTACHMENT|home-CP-01-Verificación-de-113c3-ales-de-la-página-de-inicio-chromium-retry1\error-context.md]]
+
+[[ATTACHMENT|home-CP-01-Verificación-de-113c3-ales-de-la-página-de-inicio-chromium-retry1\trace.zip]]
+
+[[ATTACHMENT|home-CP-01-Verificación-de-113c3-ales-de-la-página-de-inicio-chromium-retry2\test-failed-1.png]]
+
+[[ATTACHMENT|home-CP-01-Verificación-de-113c3-ales-de-la-página-de-inicio-chromium-retry2\video.webm]]
+
+[[ATTACHMENT|home-CP-01-Verificación-de-113c3-ales-de-la-página-de-inicio-chromium-retry2\error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="CP-01: Verificación de página de inicio › la página debe cargar en menos de 3 segundos" classname="home.spec.js" time="1.711">
+<system-out>
+<![CDATA[✓ Tiempo de carga: 121ms
+]]>
+</system-out>
+</testcase>
+<testcase name="CP-01: Verificación de página de inicio › debe ser responsive en diferentes tamaños de pantalla" classname="home.spec.js" time="1.561">
+</testcase>
+<testcase name="CP-01: Verificación de página de inicio › los botones deben cambiar de estilo en hover" classname="home.spec.js" time="2.017">
+<system-out>
+<![CDATA[Color inicial: rgb(22, 163, 74), Color hover: rgb(21, 128, 61)
+]]>
+</system-out>
+</testcase>
+<testcase name="CP-01: Verificación de página de inicio › Casos negativos y de borde › debe manejar errores de red gracefully" classname="home.spec.js" time="2.439">
+</testcase>
+<testcase name="CP-01: Verificación de página de inicio › Casos negativos y de borde › debe funcionar en resolución mínima (320px)" classname="home.spec.js" time="1.317">
+</testcase>
+<testcase name="CP-01: Verificación de página de inicio › debe cumplir con estándares básicos de accesibilidad" classname="home.spec.js" time="1.496">
+</testcase>
+<testcase name="Trazabilidad con HU-01 › Criterio 1: debo ver el título &quot;Cocinamos tu tranquilidad&quot;" classname="home.spec.js" time="0.875">
+</testcase>
+<testcase name="Trazabilidad con HU-01 › Criterio 2: debo ver los botones &quot;Ver Planes&quot; y &quot;Ver Menú&quot;" classname="home.spec.js" time="0.759">
+</testcase>
+<testcase name="Trazabilidad con HU-01 › Criterio 3: debo ver la sección de beneficios con 4 características" classname="home.spec.js" time="0.88">
+</testcase>
+</testsuite>
+<testsuite name="home.spec.js" timestamp="2025-10-27T22:16:13.190Z" hostname="firefox" tests="10" failures="1" skipped="0" time="73.175" errors="0">
+<testcase name="CP-01: Verificación de página de inicio › debe mostrar todos los elementos principales de la página de inicio" classname="home.spec.js" time="37.179">
+<failure message="home.spec.js:22:3 debe mostrar todos los elementos principales de la página de inicio" type="FAILURE">
+<![CDATA[  [firefox] › home.spec.js:22:3 › CP-01: Verificación de página de inicio › debe mostrar todos los elementos principales de la página de inicio › Verificar imagen hero 
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: locator('img[alt*="Ksero"]').first()
+    Expected: visible
+    Timeout: 5000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeVisible" with timeout 5000ms
+      - waiting for locator('img[alt*="Ksero"]').first()
+
+
+      89 |     await test.step('Verificar imagen hero', async () => {
+      90 |       const heroImage = page.locator('img[alt*="Ksero"]').first();
+    > 91 |       await expect(heroImage).toBeVisible();
+         |                               ^
+      92 |       
+      93 |       // Validación técnica: verificar que la imagen cargó correctamente
+      94 |       const imageLoaded = await heroImage.evaluate((img) => {
+        at C:\Users\sebas\OneDrive\Escritorio\automatizacion-ksero\tests\home.spec.js:91:31
+        at C:\Users\sebas\OneDrive\Escritorio\automatizacion-ksero\tests\home.spec.js:89:16
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\home-CP-01-Verificación-de-113c3-ales-de-la-página-de-inicio-firefox\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\home-CP-01-Verificación-de-113c3-ales-de-la-página-de-inicio-firefox\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\home-CP-01-Verificación-de-113c3-ales-de-la-página-de-inicio-firefox\error-context.md
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: locator('img[alt*="Ksero"]').first()
+    Expected: visible
+    Timeout: 5000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeVisible" with timeout 5000ms
+      - waiting for locator('img[alt*="Ksero"]').first()
+
+
+      89 |     await test.step('Verificar imagen hero', async () => {
+      90 |       const heroImage = page.locator('img[alt*="Ksero"]').first();
+    > 91 |       await expect(heroImage).toBeVisible();
+         |                               ^
+      92 |       
+      93 |       // Validación técnica: verificar que la imagen cargó correctamente
+      94 |       const imageLoaded = await heroImage.evaluate((img) => {
+        at C:\Users\sebas\OneDrive\Escritorio\automatizacion-ksero\tests\home.spec.js:91:31
+        at C:\Users\sebas\OneDrive\Escritorio\automatizacion-ksero\tests\home.spec.js:89:16
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\home-CP-01-Verificación-de-113c3-ales-de-la-página-de-inicio-firefox-retry1\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\home-CP-01-Verificación-de-113c3-ales-de-la-página-de-inicio-firefox-retry1\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\home-CP-01-Verificación-de-113c3-ales-de-la-página-de-inicio-firefox-retry1\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    ..\test-results\home-CP-01-Verificación-de-113c3-ales-de-la-página-de-inicio-firefox-retry1\trace.zip
+    Usage:
+
+        npx playwright show-trace ..\test-results\home-CP-01-Verificación-de-113c3-ales-de-la-página-de-inicio-firefox-retry1\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Retry #2 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: locator('img[alt*="Ksero"]').first()
+    Expected: visible
+    Timeout: 5000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeVisible" with timeout 5000ms
+      - waiting for locator('img[alt*="Ksero"]').first()
+
+
+      89 |     await test.step('Verificar imagen hero', async () => {
+      90 |       const heroImage = page.locator('img[alt*="Ksero"]').first();
+    > 91 |       await expect(heroImage).toBeVisible();
+         |                               ^
+      92 |       
+      93 |       // Validación técnica: verificar que la imagen cargó correctamente
+      94 |       const imageLoaded = await heroImage.evaluate((img) => {
+        at C:\Users\sebas\OneDrive\Escritorio\automatizacion-ksero\tests\home.spec.js:91:31
+        at C:\Users\sebas\OneDrive\Escritorio\automatizacion-ksero\tests\home.spec.js:89:16
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\home-CP-01-Verificación-de-113c3-ales-de-la-página-de-inicio-firefox-retry2\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\home-CP-01-Verificación-de-113c3-ales-de-la-página-de-inicio-firefox-retry2\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\home-CP-01-Verificación-de-113c3-ales-de-la-página-de-inicio-firefox-retry2\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|home-CP-01-Verificación-de-113c3-ales-de-la-página-de-inicio-firefox\test-failed-1.png]]
+
+[[ATTACHMENT|home-CP-01-Verificación-de-113c3-ales-de-la-página-de-inicio-firefox\video.webm]]
+
+[[ATTACHMENT|home-CP-01-Verificación-de-113c3-ales-de-la-página-de-inicio-firefox\error-context.md]]
+
+[[ATTACHMENT|home-CP-01-Verificación-de-113c3-ales-de-la-página-de-inicio-firefox-retry1\test-failed-1.png]]
+
+[[ATTACHMENT|home-CP-01-Verificación-de-113c3-ales-de-la-página-de-inicio-firefox-retry1\video.webm]]
+
+[[ATTACHMENT|home-CP-01-Verificación-de-113c3-ales-de-la-página-de-inicio-firefox-retry1\error-context.md]]
+
+[[ATTACHMENT|home-CP-01-Verificación-de-113c3-ales-de-la-página-de-inicio-firefox-retry1\trace.zip]]
+
+[[ATTACHMENT|home-CP-01-Verificación-de-113c3-ales-de-la-página-de-inicio-firefox-retry2\test-failed-1.png]]
+
+[[ATTACHMENT|home-CP-01-Verificación-de-113c3-ales-de-la-página-de-inicio-firefox-retry2\video.webm]]
+
+[[ATTACHMENT|home-CP-01-Verificación-de-113c3-ales-de-la-página-de-inicio-firefox-retry2\error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="CP-01: Verificación de página de inicio › la página debe cargar en menos de 3 segundos" classname="home.spec.js" time="6.52">
+<system-out>
+<![CDATA[✓ Tiempo de carga: 233ms
+]]>
+</system-out>
+</testcase>
+<testcase name="CP-01: Verificación de página de inicio › debe ser responsive en diferentes tamaños de pantalla" classname="home.spec.js" time="4.135">
+</testcase>
+<testcase name="CP-01: Verificación de página de inicio › los botones deben cambiar de estilo en hover" classname="home.spec.js" time="4.222">
+<system-out>
+<![CDATA[Color inicial: rgb(22, 163, 74), Color hover: rgb(21, 128, 61)
+]]>
+</system-out>
+</testcase>
+<testcase name="CP-01: Verificación de página de inicio › Casos negativos y de borde › debe manejar errores de red gracefully" classname="home.spec.js" time="3.921">
+</testcase>
+<testcase name="CP-01: Verificación de página de inicio › Casos negativos y de borde › debe funcionar en resolución mínima (320px)" classname="home.spec.js" time="3.742">
+</testcase>
+<testcase name="CP-01: Verificación de página de inicio › debe cumplir con estándares básicos de accesibilidad" classname="home.spec.js" time="3.863">
+</testcase>
+<testcase name="Trazabilidad con HU-01 › Criterio 1: debo ver el título &quot;Cocinamos tu tranquilidad&quot;" classname="home.spec.js" time="3.061">
+</testcase>
+<testcase name="Trazabilidad con HU-01 › Criterio 2: debo ver los botones &quot;Ver Planes&quot; y &quot;Ver Menú&quot;" classname="home.spec.js" time="3.256">
+</testcase>
+<testcase name="Trazabilidad con HU-01 › Criterio 3: debo ver la sección de beneficios con 4 características" classname="home.spec.js" time="3.276">
+</testcase>
+</testsuite>
+<testsuite name="home.spec.js" timestamp="2025-10-27T22:16:13.190Z" hostname="webkit" tests="10" failures="1" skipped="0" time="40.98" errors="0">
+<testcase name="CP-01: Verificación de página de inicio › debe mostrar todos los elementos principales de la página de inicio" classname="home.spec.js" time="24.238">
+<failure message="home.spec.js:22:3 debe mostrar todos los elementos principales de la página de inicio" type="FAILURE">
+<![CDATA[  [webkit] › home.spec.js:22:3 › CP-01: Verificación de página de inicio › debe mostrar todos los elementos principales de la página de inicio › Verificar imagen hero 
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: locator('img[alt*="Ksero"]').first()
+    Expected: visible
+    Timeout: 5000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeVisible" with timeout 5000ms
+      - waiting for locator('img[alt*="Ksero"]').first()
+
+
+      89 |     await test.step('Verificar imagen hero', async () => {
+      90 |       const heroImage = page.locator('img[alt*="Ksero"]').first();
+    > 91 |       await expect(heroImage).toBeVisible();
+         |                               ^
+      92 |       
+      93 |       // Validación técnica: verificar que la imagen cargó correctamente
+      94 |       const imageLoaded = await heroImage.evaluate((img) => {
+        at C:\Users\sebas\OneDrive\Escritorio\automatizacion-ksero\tests\home.spec.js:91:31
+        at C:\Users\sebas\OneDrive\Escritorio\automatizacion-ksero\tests\home.spec.js:89:16
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\home-CP-01-Verificación-de-113c3-ales-de-la-página-de-inicio-webkit\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\home-CP-01-Verificación-de-113c3-ales-de-la-página-de-inicio-webkit\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\home-CP-01-Verificación-de-113c3-ales-de-la-página-de-inicio-webkit\error-context.md
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: locator('img[alt*="Ksero"]').first()
+    Expected: visible
+    Timeout: 5000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeVisible" with timeout 5000ms
+      - waiting for locator('img[alt*="Ksero"]').first()
+
+
+      89 |     await test.step('Verificar imagen hero', async () => {
+      90 |       const heroImage = page.locator('img[alt*="Ksero"]').first();
+    > 91 |       await expect(heroImage).toBeVisible();
+         |                               ^
+      92 |       
+      93 |       // Validación técnica: verificar que la imagen cargó correctamente
+      94 |       const imageLoaded = await heroImage.evaluate((img) => {
+        at C:\Users\sebas\OneDrive\Escritorio\automatizacion-ksero\tests\home.spec.js:91:31
+        at C:\Users\sebas\OneDrive\Escritorio\automatizacion-ksero\tests\home.spec.js:89:16
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\home-CP-01-Verificación-de-113c3-ales-de-la-página-de-inicio-webkit-retry1\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\home-CP-01-Verificación-de-113c3-ales-de-la-página-de-inicio-webkit-retry1\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\home-CP-01-Verificación-de-113c3-ales-de-la-página-de-inicio-webkit-retry1\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    ..\test-results\home-CP-01-Verificación-de-113c3-ales-de-la-página-de-inicio-webkit-retry1\trace.zip
+    Usage:
+
+        npx playwright show-trace ..\test-results\home-CP-01-Verificación-de-113c3-ales-de-la-página-de-inicio-webkit-retry1\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Retry #2 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: locator('img[alt*="Ksero"]').first()
+    Expected: visible
+    Timeout: 5000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeVisible" with timeout 5000ms
+      - waiting for locator('img[alt*="Ksero"]').first()
+
+
+      89 |     await test.step('Verificar imagen hero', async () => {
+      90 |       const heroImage = page.locator('img[alt*="Ksero"]').first();
+    > 91 |       await expect(heroImage).toBeVisible();
+         |                               ^
+      92 |       
+      93 |       // Validación técnica: verificar que la imagen cargó correctamente
+      94 |       const imageLoaded = await heroImage.evaluate((img) => {
+        at C:\Users\sebas\OneDrive\Escritorio\automatizacion-ksero\tests\home.spec.js:91:31
+        at C:\Users\sebas\OneDrive\Escritorio\automatizacion-ksero\tests\home.spec.js:89:16
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\home-CP-01-Verificación-de-113c3-ales-de-la-página-de-inicio-webkit-retry2\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\home-CP-01-Verificación-de-113c3-ales-de-la-página-de-inicio-webkit-retry2\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\home-CP-01-Verificación-de-113c3-ales-de-la-página-de-inicio-webkit-retry2\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|home-CP-01-Verificación-de-113c3-ales-de-la-página-de-inicio-webkit\test-failed-1.png]]
+
+[[ATTACHMENT|home-CP-01-Verificación-de-113c3-ales-de-la-página-de-inicio-webkit\video.webm]]
+
+[[ATTACHMENT|home-CP-01-Verificación-de-113c3-ales-de-la-página-de-inicio-webkit\error-context.md]]
+
+[[ATTACHMENT|home-CP-01-Verificación-de-113c3-ales-de-la-página-de-inicio-webkit-retry1\test-failed-1.png]]
+
+[[ATTACHMENT|home-CP-01-Verificación-de-113c3-ales-de-la-página-de-inicio-webkit-retry1\video.webm]]
+
+[[ATTACHMENT|home-CP-01-Verificación-de-113c3-ales-de-la-página-de-inicio-webkit-retry1\error-context.md]]
+
+[[ATTACHMENT|home-CP-01-Verificación-de-113c3-ales-de-la-página-de-inicio-webkit-retry1\trace.zip]]
+
+[[ATTACHMENT|home-CP-01-Verificación-de-113c3-ales-de-la-página-de-inicio-webkit-retry2\test-failed-1.png]]
+
+[[ATTACHMENT|home-CP-01-Verificación-de-113c3-ales-de-la-página-de-inicio-webkit-retry2\video.webm]]
+
+[[ATTACHMENT|home-CP-01-Verificación-de-113c3-ales-de-la-página-de-inicio-webkit-retry2\error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="CP-01: Verificación de página de inicio › la página debe cargar en menos de 3 segundos" classname="home.spec.js" time="2.263">
+<system-out>
+<![CDATA[✓ Tiempo de carga: 197ms
+]]>
+</system-out>
+</testcase>
+<testcase name="CP-01: Verificación de página de inicio › debe ser responsive en diferentes tamaños de pantalla" classname="home.spec.js" time="1.848">
+</testcase>
+<testcase name="CP-01: Verificación de página de inicio › los botones deben cambiar de estilo en hover" classname="home.spec.js" time="2.811">
+<system-out>
+<![CDATA[Color inicial: rgb(22, 163, 74), Color hover: rgb(21, 128, 61)
+]]>
+</system-out>
+</testcase>
+<testcase name="CP-01: Verificación de página de inicio › Casos negativos y de borde › debe manejar errores de red gracefully" classname="home.spec.js" time="1.88">
+</testcase>
+<testcase name="CP-01: Verificación de página de inicio › Casos negativos y de borde › debe funcionar en resolución mínima (320px)" classname="home.spec.js" time="1.635">
+</testcase>
+<testcase name="CP-01: Verificación de página de inicio › debe cumplir con estándares básicos de accesibilidad" classname="home.spec.js" time="1.979">
+</testcase>
+<testcase name="Trazabilidad con HU-01 › Criterio 1: debo ver el título &quot;Cocinamos tu tranquilidad&quot;" classname="home.spec.js" time="1.364">
+</testcase>
+<testcase name="Trazabilidad con HU-01 › Criterio 2: debo ver los botones &quot;Ver Planes&quot; y &quot;Ver Menú&quot;" classname="home.spec.js" time="1.418">
+</testcase>
+<testcase name="Trazabilidad con HU-01 › Criterio 3: debo ver la sección de beneficios con 4 características" classname="home.spec.js" time="1.544">
+</testcase>
+</testsuite>
+<testsuite name="home.spec.js" timestamp="2025-10-27T22:16:13.190Z" hostname="Mobile Chrome" tests="10" failures="1" skipped="0" time="37.695" errors="0">
+<testcase name="CP-01: Verificación de página de inicio › debe mostrar todos los elementos principales de la página de inicio" classname="home.spec.js" time="23.088">
+<failure message="home.spec.js:22:3 debe mostrar todos los elementos principales de la página de inicio" type="FAILURE">
+<![CDATA[  [Mobile Chrome] › home.spec.js:22:3 › CP-01: Verificación de página de inicio › debe mostrar todos los elementos principales de la página de inicio › Verificar imagen hero 
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: locator('img[alt*="Ksero"]').first()
+    Expected: visible
+    Timeout: 5000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeVisible" with timeout 5000ms
+      - waiting for locator('img[alt*="Ksero"]').first()
+
+
+      89 |     await test.step('Verificar imagen hero', async () => {
+      90 |       const heroImage = page.locator('img[alt*="Ksero"]').first();
+    > 91 |       await expect(heroImage).toBeVisible();
+         |                               ^
+      92 |       
+      93 |       // Validación técnica: verificar que la imagen cargó correctamente
+      94 |       const imageLoaded = await heroImage.evaluate((img) => {
+        at C:\Users\sebas\OneDrive\Escritorio\automatizacion-ksero\tests\home.spec.js:91:31
+        at C:\Users\sebas\OneDrive\Escritorio\automatizacion-ksero\tests\home.spec.js:89:16
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\home-CP-01-Verificación-de-113c3-ales-de-la-página-de-inicio-Mobile-Chrome\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\home-CP-01-Verificación-de-113c3-ales-de-la-página-de-inicio-Mobile-Chrome\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\home-CP-01-Verificación-de-113c3-ales-de-la-página-de-inicio-Mobile-Chrome\error-context.md
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: locator('img[alt*="Ksero"]').first()
+    Expected: visible
+    Timeout: 5000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeVisible" with timeout 5000ms
+      - waiting for locator('img[alt*="Ksero"]').first()
+
+
+      89 |     await test.step('Verificar imagen hero', async () => {
+      90 |       const heroImage = page.locator('img[alt*="Ksero"]').first();
+    > 91 |       await expect(heroImage).toBeVisible();
+         |                               ^
+      92 |       
+      93 |       // Validación técnica: verificar que la imagen cargó correctamente
+      94 |       const imageLoaded = await heroImage.evaluate((img) => {
+        at C:\Users\sebas\OneDrive\Escritorio\automatizacion-ksero\tests\home.spec.js:91:31
+        at C:\Users\sebas\OneDrive\Escritorio\automatizacion-ksero\tests\home.spec.js:89:16
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\home-CP-01-Verificación-de-113c3-ales-de-la-página-de-inicio-Mobile-Chrome-retry1\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\home-CP-01-Verificación-de-113c3-ales-de-la-página-de-inicio-Mobile-Chrome-retry1\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\home-CP-01-Verificación-de-113c3-ales-de-la-página-de-inicio-Mobile-Chrome-retry1\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    ..\test-results\home-CP-01-Verificación-de-113c3-ales-de-la-página-de-inicio-Mobile-Chrome-retry1\trace.zip
+    Usage:
+
+        npx playwright show-trace ..\test-results\home-CP-01-Verificación-de-113c3-ales-de-la-página-de-inicio-Mobile-Chrome-retry1\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Retry #2 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: locator('img[alt*="Ksero"]').first()
+    Expected: visible
+    Timeout: 5000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeVisible" with timeout 5000ms
+      - waiting for locator('img[alt*="Ksero"]').first()
+
+
+      89 |     await test.step('Verificar imagen hero', async () => {
+      90 |       const heroImage = page.locator('img[alt*="Ksero"]').first();
+    > 91 |       await expect(heroImage).toBeVisible();
+         |                               ^
+      92 |       
+      93 |       // Validación técnica: verificar que la imagen cargó correctamente
+      94 |       const imageLoaded = await heroImage.evaluate((img) => {
+        at C:\Users\sebas\OneDrive\Escritorio\automatizacion-ksero\tests\home.spec.js:91:31
+        at C:\Users\sebas\OneDrive\Escritorio\automatizacion-ksero\tests\home.spec.js:89:16
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\home-CP-01-Verificación-de-113c3-ales-de-la-página-de-inicio-Mobile-Chrome-retry2\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\home-CP-01-Verificación-de-113c3-ales-de-la-página-de-inicio-Mobile-Chrome-retry2\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\home-CP-01-Verificación-de-113c3-ales-de-la-página-de-inicio-Mobile-Chrome-retry2\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|home-CP-01-Verificación-de-113c3-ales-de-la-página-de-inicio-Mobile-Chrome\test-failed-1.png]]
+
+[[ATTACHMENT|home-CP-01-Verificación-de-113c3-ales-de-la-página-de-inicio-Mobile-Chrome\video.webm]]
+
+[[ATTACHMENT|home-CP-01-Verificación-de-113c3-ales-de-la-página-de-inicio-Mobile-Chrome\error-context.md]]
+
+[[ATTACHMENT|home-CP-01-Verificación-de-113c3-ales-de-la-página-de-inicio-Mobile-Chrome-retry1\test-failed-1.png]]
+
+[[ATTACHMENT|home-CP-01-Verificación-de-113c3-ales-de-la-página-de-inicio-Mobile-Chrome-retry1\video.webm]]
+
+[[ATTACHMENT|home-CP-01-Verificación-de-113c3-ales-de-la-página-de-inicio-Mobile-Chrome-retry1\error-context.md]]
+
+[[ATTACHMENT|home-CP-01-Verificación-de-113c3-ales-de-la-página-de-inicio-Mobile-Chrome-retry1\trace.zip]]
+
+[[ATTACHMENT|home-CP-01-Verificación-de-113c3-ales-de-la-página-de-inicio-Mobile-Chrome-retry2\test-failed-1.png]]
+
+[[ATTACHMENT|home-CP-01-Verificación-de-113c3-ales-de-la-página-de-inicio-Mobile-Chrome-retry2\video.webm]]
+
+[[ATTACHMENT|home-CP-01-Verificación-de-113c3-ales-de-la-página-de-inicio-Mobile-Chrome-retry2\error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="CP-01: Verificación de página de inicio › la página debe cargar en menos de 3 segundos" classname="home.spec.js" time="2.15">
+<system-out>
+<![CDATA[✓ Tiempo de carga: 105ms
+]]>
+</system-out>
+</testcase>
+<testcase name="CP-01: Verificación de página de inicio › debe ser responsive en diferentes tamaños de pantalla" classname="home.spec.js" time="1.963">
+</testcase>
+<testcase name="CP-01: Verificación de página de inicio › los botones deben cambiar de estilo en hover" classname="home.spec.js" time="2.196">
+<system-out>
+<![CDATA[Color inicial: rgb(22, 163, 74), Color hover: rgb(21, 128, 61)
+]]>
+</system-out>
+</testcase>
+<testcase name="CP-01: Verificación de página de inicio › Casos negativos y de borde › debe manejar errores de red gracefully" classname="home.spec.js" time="1.461">
+</testcase>
+<testcase name="CP-01: Verificación de página de inicio › Casos negativos y de borde › debe funcionar en resolución mínima (320px)" classname="home.spec.js" time="1.65">
+</testcase>
+<testcase name="CP-01: Verificación de página de inicio › debe cumplir con estándares básicos de accesibilidad" classname="home.spec.js" time="1.764">
+</testcase>
+<testcase name="Trazabilidad con HU-01 › Criterio 1: debo ver el título &quot;Cocinamos tu tranquilidad&quot;" classname="home.spec.js" time="1.198">
+</testcase>
+<testcase name="Trazabilidad con HU-01 › Criterio 2: debo ver los botones &quot;Ver Planes&quot; y &quot;Ver Menú&quot;" classname="home.spec.js" time="1.137">
+</testcase>
+<testcase name="Trazabilidad con HU-01 › Criterio 3: debo ver la sección de beneficios con 4 características" classname="home.spec.js" time="1.088">
+</testcase>
+</testsuite>
+</testsuites>

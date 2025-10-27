@@ -1,0 +1,2550 @@
+{
+  "config": {
+    "configFile": "C:\\Users\\sebas\\OneDrive\\Escritorio\\automatizacion-ksero\\playwright.config.js",
+    "rootDir": "C:/Users/sebas/OneDrive/Escritorio/automatizacion-ksero/tests",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "html",
+        {
+          "outputFolder": "playwright-report"
+        }
+      ],
+      [
+        "json",
+        {
+          "outputFile": "test-results/results.json"
+        }
+      ],
+      [
+        "junit",
+        {
+          "outputFile": "test-results/junit.xml"
+        }
+      ],
+      [
+        "list",
+        null
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "C:/Users/sebas/OneDrive/Escritorio/automatizacion-ksero/test-results",
+        "repeatEach": 1,
+        "retries": 2,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "C:/Users/sebas/OneDrive/Escritorio/automatizacion-ksero/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "C:/Users/sebas/OneDrive/Escritorio/automatizacion-ksero/test-results",
+        "repeatEach": 1,
+        "retries": 2,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "C:/Users/sebas/OneDrive/Escritorio/automatizacion-ksero/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "C:/Users/sebas/OneDrive/Escritorio/automatizacion-ksero/test-results",
+        "repeatEach": 1,
+        "retries": 2,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "C:/Users/sebas/OneDrive/Escritorio/automatizacion-ksero/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "C:/Users/sebas/OneDrive/Escritorio/automatizacion-ksero/test-results",
+        "repeatEach": 1,
+        "retries": 2,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "Mobile Chrome",
+        "name": "Mobile Chrome",
+        "testDir": "C:/Users/sebas/OneDrive/Escritorio/automatizacion-ksero/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.56.1",
+    "workers": 1,
+    "webServer": {
+      "command": "npm run dev",
+      "url": "http://localhost:5173",
+      "reuseExistingServer": true,
+      "timeout": 120000
+    }
+  },
+  "suites": [
+    {
+      "title": "home.spec.js",
+      "file": "home.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "CP-01: Verificación de página de inicio",
+          "file": "home.spec.js",
+          "line": 8,
+          "column": 6,
+          "specs": [
+            {
+              "title": "debe mostrar todos los elementos principales de la página de inicio",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 12250,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('img[alt*=\"Ksero\"]').first()\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('img[alt*=\"Ksero\"]').first()\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('img[alt*=\"Ksero\"]').first()\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('img[alt*=\"Ksero\"]').first()\u001b[22m\n\n    at C:\\Users\\sebas\\OneDrive\\Escritorio\\automatizacion-ksero\\tests\\home.spec.js:91:31\n    at C:\\Users\\sebas\\OneDrive\\Escritorio\\automatizacion-ksero\\tests\\home.spec.js:89:16",
+                        "location": {
+                          "file": "C:\\Users\\sebas\\OneDrive\\Escritorio\\automatizacion-ksero\\tests\\home.spec.js",
+                          "column": 31,
+                          "line": 91
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 89 |\u001b[39m     \u001b[36mawait\u001b[39m test\u001b[33m.\u001b[39mstep(\u001b[32m'Verificar imagen hero'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n \u001b[90m 90 |\u001b[39m       \u001b[36mconst\u001b[39m heroImage \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'img[alt*=\"Ksero\"]'\u001b[39m)\u001b[33m.\u001b[39mfirst()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 91 |\u001b[39m       \u001b[36mawait\u001b[39m expect(heroImage)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 92 |\u001b[39m       \n \u001b[90m 93 |\u001b[39m       \u001b[90m// Validación técnica: verificar que la imagen cargó correctamente\u001b[39m\n \u001b[90m 94 |\u001b[39m       \u001b[36mconst\u001b[39m imageLoaded \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m heroImage\u001b[33m.\u001b[39mevaluate((img) \u001b[33m=>\u001b[39m {\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\sebas\\OneDrive\\Escritorio\\automatizacion-ksero\\tests\\home.spec.js",
+                            "column": 31,
+                            "line": 91
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('img[alt*=\"Ksero\"]').first()\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('img[alt*=\"Ksero\"]').first()\u001b[22m\n\n\n\u001b[0m \u001b[90m 89 |\u001b[39m     \u001b[36mawait\u001b[39m test\u001b[33m.\u001b[39mstep(\u001b[32m'Verificar imagen hero'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n \u001b[90m 90 |\u001b[39m       \u001b[36mconst\u001b[39m heroImage \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'img[alt*=\"Ksero\"]'\u001b[39m)\u001b[33m.\u001b[39mfirst()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 91 |\u001b[39m       \u001b[36mawait\u001b[39m expect(heroImage)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 92 |\u001b[39m       \n \u001b[90m 93 |\u001b[39m       \u001b[90m// Validación técnica: verificar que la imagen cargó correctamente\u001b[39m\n \u001b[90m 94 |\u001b[39m       \u001b[36mconst\u001b[39m imageLoaded \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m heroImage\u001b[33m.\u001b[39mevaluate((img) \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[2m    at C:\\Users\\sebas\\OneDrive\\Escritorio\\automatizacion-ksero\\tests\\home.spec.js:91:31\u001b[22m\n\u001b[2m    at C:\\Users\\sebas\\OneDrive\\Escritorio\\automatizacion-ksero\\tests\\home.spec.js:89:16\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Verificar título principal",
+                          "duration": 77
+                        },
+                        {
+                          "title": "Verificar botón \"Ver Planes\"",
+                          "duration": 65
+                        },
+                        {
+                          "title": "Verificar botón \"Ver Menú\"",
+                          "duration": 19
+                        },
+                        {
+                          "title": "Verificar sección de beneficios",
+                          "duration": 96
+                        },
+                        {
+                          "title": "Verificar imagen hero",
+                          "duration": 5007,
+                          "error": {
+                            "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('img[alt*=\"Ksero\"]').first()\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('img[alt*=\"Ksero\"]').first()\u001b[22m\n",
+                            "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('img[alt*=\"Ksero\"]').first()\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('img[alt*=\"Ksero\"]').first()\u001b[22m\n\n    at C:\\Users\\sebas\\OneDrive\\Escritorio\\automatizacion-ksero\\tests\\home.spec.js:91:31\n    at C:\\Users\\sebas\\OneDrive\\Escritorio\\automatizacion-ksero\\tests\\home.spec.js:89:16",
+                            "location": {
+                              "file": "C:\\Users\\sebas\\OneDrive\\Escritorio\\automatizacion-ksero\\tests\\home.spec.js",
+                              "column": 31,
+                              "line": 91
+                            },
+                            "snippet": "\u001b[0m \u001b[90m 89 |\u001b[39m     \u001b[36mawait\u001b[39m test\u001b[33m.\u001b[39mstep(\u001b[32m'Verificar imagen hero'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n \u001b[90m 90 |\u001b[39m       \u001b[36mconst\u001b[39m heroImage \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'img[alt*=\"Ksero\"]'\u001b[39m)\u001b[33m.\u001b[39mfirst()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 91 |\u001b[39m       \u001b[36mawait\u001b[39m expect(heroImage)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 92 |\u001b[39m       \n \u001b[90m 93 |\u001b[39m       \u001b[90m// Validación técnica: verificar que la imagen cargó correctamente\u001b[39m\n \u001b[90m 94 |\u001b[39m       \u001b[36mconst\u001b[39m imageLoaded \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m heroImage\u001b[33m.\u001b[39mevaluate((img) \u001b[33m=>\u001b[39m {\u001b[0m"
+                          }
+                        }
+                      ],
+                      "startTime": "2025-10-27T22:16:14.784Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\sebas\\OneDrive\\Escritorio\\automatizacion-ksero\\test-results\\home-CP-01-Verificación-de-113c3-ales-de-la-página-de-inicio-chromium\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\sebas\\OneDrive\\Escritorio\\automatizacion-ksero\\test-results\\home-CP-01-Verificación-de-113c3-ales-de-la-página-de-inicio-chromium\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\sebas\\OneDrive\\Escritorio\\automatizacion-ksero\\test-results\\home-CP-01-Verificación-de-113c3-ales-de-la-página-de-inicio-chromium\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\sebas\\OneDrive\\Escritorio\\automatizacion-ksero\\tests\\home.spec.js",
+                        "column": 31,
+                        "line": 91
+                      }
+                    },
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 7987,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('img[alt*=\"Ksero\"]').first()\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('img[alt*=\"Ksero\"]').first()\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('img[alt*=\"Ksero\"]').first()\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('img[alt*=\"Ksero\"]').first()\u001b[22m\n\n    at C:\\Users\\sebas\\OneDrive\\Escritorio\\automatizacion-ksero\\tests\\home.spec.js:91:31\n    at C:\\Users\\sebas\\OneDrive\\Escritorio\\automatizacion-ksero\\tests\\home.spec.js:89:16",
+                        "location": {
+                          "file": "C:\\Users\\sebas\\OneDrive\\Escritorio\\automatizacion-ksero\\tests\\home.spec.js",
+                          "column": 31,
+                          "line": 91
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 89 |\u001b[39m     \u001b[36mawait\u001b[39m test\u001b[33m.\u001b[39mstep(\u001b[32m'Verificar imagen hero'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n \u001b[90m 90 |\u001b[39m       \u001b[36mconst\u001b[39m heroImage \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'img[alt*=\"Ksero\"]'\u001b[39m)\u001b[33m.\u001b[39mfirst()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 91 |\u001b[39m       \u001b[36mawait\u001b[39m expect(heroImage)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 92 |\u001b[39m       \n \u001b[90m 93 |\u001b[39m       \u001b[90m// Validación técnica: verificar que la imagen cargó correctamente\u001b[39m\n \u001b[90m 94 |\u001b[39m       \u001b[36mconst\u001b[39m imageLoaded \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m heroImage\u001b[33m.\u001b[39mevaluate((img) \u001b[33m=>\u001b[39m {\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\sebas\\OneDrive\\Escritorio\\automatizacion-ksero\\tests\\home.spec.js",
+                            "column": 31,
+                            "line": 91
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('img[alt*=\"Ksero\"]').first()\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('img[alt*=\"Ksero\"]').first()\u001b[22m\n\n\n\u001b[0m \u001b[90m 89 |\u001b[39m     \u001b[36mawait\u001b[39m test\u001b[33m.\u001b[39mstep(\u001b[32m'Verificar imagen hero'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n \u001b[90m 90 |\u001b[39m       \u001b[36mconst\u001b[39m heroImage \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'img[alt*=\"Ksero\"]'\u001b[39m)\u001b[33m.\u001b[39mfirst()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 91 |\u001b[39m       \u001b[36mawait\u001b[39m expect(heroImage)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 92 |\u001b[39m       \n \u001b[90m 93 |\u001b[39m       \u001b[90m// Validación técnica: verificar que la imagen cargó correctamente\u001b[39m\n \u001b[90m 94 |\u001b[39m       \u001b[36mconst\u001b[39m imageLoaded \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m heroImage\u001b[33m.\u001b[39mevaluate((img) \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[2m    at C:\\Users\\sebas\\OneDrive\\Escritorio\\automatizacion-ksero\\tests\\home.spec.js:91:31\u001b[22m\n\u001b[2m    at C:\\Users\\sebas\\OneDrive\\Escritorio\\automatizacion-ksero\\tests\\home.spec.js:89:16\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 1,
+                      "steps": [
+                        {
+                          "title": "Verificar título principal",
+                          "duration": 147
+                        },
+                        {
+                          "title": "Verificar botón \"Ver Planes\"",
+                          "duration": 135
+                        },
+                        {
+                          "title": "Verificar botón \"Ver Menú\"",
+                          "duration": 31
+                        },
+                        {
+                          "title": "Verificar sección de beneficios",
+                          "duration": 121
+                        },
+                        {
+                          "title": "Verificar imagen hero",
+                          "duration": 5034,
+                          "error": {
+                            "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('img[alt*=\"Ksero\"]').first()\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('img[alt*=\"Ksero\"]').first()\u001b[22m\n",
+                            "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('img[alt*=\"Ksero\"]').first()\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('img[alt*=\"Ksero\"]').first()\u001b[22m\n\n    at C:\\Users\\sebas\\OneDrive\\Escritorio\\automatizacion-ksero\\tests\\home.spec.js:91:31\n    at C:\\Users\\sebas\\OneDrive\\Escritorio\\automatizacion-ksero\\tests\\home.spec.js:89:16",
+                            "location": {
+                              "file": "C:\\Users\\sebas\\OneDrive\\Escritorio\\automatizacion-ksero\\tests\\home.spec.js",
+                              "column": 31,
+                              "line": 91
+                            },
+                            "snippet": "\u001b[0m \u001b[90m 89 |\u001b[39m     \u001b[36mawait\u001b[39m test\u001b[33m.\u001b[39mstep(\u001b[32m'Verificar imagen hero'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n \u001b[90m 90 |\u001b[39m       \u001b[36mconst\u001b[39m heroImage \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'img[alt*=\"Ksero\"]'\u001b[39m)\u001b[33m.\u001b[39mfirst()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 91 |\u001b[39m       \u001b[36mawait\u001b[39m expect(heroImage)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 92 |\u001b[39m       \n \u001b[90m 93 |\u001b[39m       \u001b[90m// Validación técnica: verificar que la imagen cargó correctamente\u001b[39m\n \u001b[90m 94 |\u001b[39m       \u001b[36mconst\u001b[39m imageLoaded \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m heroImage\u001b[33m.\u001b[39mevaluate((img) \u001b[33m=>\u001b[39m {\u001b[0m"
+                          }
+                        }
+                      ],
+                      "startTime": "2025-10-27T22:16:34.516Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\sebas\\OneDrive\\Escritorio\\automatizacion-ksero\\test-results\\home-CP-01-Verificación-de-113c3-ales-de-la-página-de-inicio-chromium-retry1\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\sebas\\OneDrive\\Escritorio\\automatizacion-ksero\\test-results\\home-CP-01-Verificación-de-113c3-ales-de-la-página-de-inicio-chromium-retry1\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\sebas\\OneDrive\\Escritorio\\automatizacion-ksero\\test-results\\home-CP-01-Verificación-de-113c3-ales-de-la-página-de-inicio-chromium-retry1\\error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\sebas\\OneDrive\\Escritorio\\automatizacion-ksero\\test-results\\home-CP-01-Verificación-de-113c3-ales-de-la-página-de-inicio-chromium-retry1\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\sebas\\OneDrive\\Escritorio\\automatizacion-ksero\\tests\\home.spec.js",
+                        "column": 31,
+                        "line": 91
+                      }
+                    },
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 7724,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('img[alt*=\"Ksero\"]').first()\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('img[alt*=\"Ksero\"]').first()\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('img[alt*=\"Ksero\"]').first()\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('img[alt*=\"Ksero\"]').first()\u001b[22m\n\n    at C:\\Users\\sebas\\OneDrive\\Escritorio\\automatizacion-ksero\\tests\\home.spec.js:91:31\n    at C:\\Users\\sebas\\OneDrive\\Escritorio\\automatizacion-ksero\\tests\\home.spec.js:89:16",
+                        "location": {
+                          "file": "C:\\Users\\sebas\\OneDrive\\Escritorio\\automatizacion-ksero\\tests\\home.spec.js",
+                          "column": 31,
+                          "line": 91
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 89 |\u001b[39m     \u001b[36mawait\u001b[39m test\u001b[33m.\u001b[39mstep(\u001b[32m'Verificar imagen hero'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n \u001b[90m 90 |\u001b[39m       \u001b[36mconst\u001b[39m heroImage \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'img[alt*=\"Ksero\"]'\u001b[39m)\u001b[33m.\u001b[39mfirst()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 91 |\u001b[39m       \u001b[36mawait\u001b[39m expect(heroImage)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 92 |\u001b[39m       \n \u001b[90m 93 |\u001b[39m       \u001b[90m// Validación técnica: verificar que la imagen cargó correctamente\u001b[39m\n \u001b[90m 94 |\u001b[39m       \u001b[36mconst\u001b[39m imageLoaded \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m heroImage\u001b[33m.\u001b[39mevaluate((img) \u001b[33m=>\u001b[39m {\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\sebas\\OneDrive\\Escritorio\\automatizacion-ksero\\tests\\home.spec.js",
+                            "column": 31,
+                            "line": 91
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('img[alt*=\"Ksero\"]').first()\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('img[alt*=\"Ksero\"]').first()\u001b[22m\n\n\n\u001b[0m \u001b[90m 89 |\u001b[39m     \u001b[36mawait\u001b[39m test\u001b[33m.\u001b[39mstep(\u001b[32m'Verificar imagen hero'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n \u001b[90m 90 |\u001b[39m       \u001b[36mconst\u001b[39m heroImage \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'img[alt*=\"Ksero\"]'\u001b[39m)\u001b[33m.\u001b[39mfirst()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 91 |\u001b[39m       \u001b[36mawait\u001b[39m expect(heroImage)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 92 |\u001b[39m       \n \u001b[90m 93 |\u001b[39m       \u001b[90m// Validación técnica: verificar que la imagen cargó correctamente\u001b[39m\n \u001b[90m 94 |\u001b[39m       \u001b[36mconst\u001b[39m imageLoaded \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m heroImage\u001b[33m.\u001b[39mevaluate((img) \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[2m    at C:\\Users\\sebas\\OneDrive\\Escritorio\\automatizacion-ksero\\tests\\home.spec.js:91:31\u001b[22m\n\u001b[2m    at C:\\Users\\sebas\\OneDrive\\Escritorio\\automatizacion-ksero\\tests\\home.spec.js:89:16\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 2,
+                      "steps": [
+                        {
+                          "title": "Verificar título principal",
+                          "duration": 83
+                        },
+                        {
+                          "title": "Verificar botón \"Ver Planes\"",
+                          "duration": 59
+                        },
+                        {
+                          "title": "Verificar botón \"Ver Menú\"",
+                          "duration": 18
+                        },
+                        {
+                          "title": "Verificar sección de beneficios",
+                          "duration": 78
+                        },
+                        {
+                          "title": "Verificar imagen hero",
+                          "duration": 5021,
+                          "error": {
+                            "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('img[alt*=\"Ksero\"]').first()\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('img[alt*=\"Ksero\"]').first()\u001b[22m\n",
+                            "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('img[alt*=\"Ksero\"]').first()\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('img[alt*=\"Ksero\"]').first()\u001b[22m\n\n    at C:\\Users\\sebas\\OneDrive\\Escritorio\\automatizacion-ksero\\tests\\home.spec.js:91:31\n    at C:\\Users\\sebas\\OneDrive\\Escritorio\\automatizacion-ksero\\tests\\home.spec.js:89:16",
+                            "location": {
+                              "file": "C:\\Users\\sebas\\OneDrive\\Escritorio\\automatizacion-ksero\\tests\\home.spec.js",
+                              "column": 31,
+                              "line": 91
+                            },
+                            "snippet": "\u001b[0m \u001b[90m 89 |\u001b[39m     \u001b[36mawait\u001b[39m test\u001b[33m.\u001b[39mstep(\u001b[32m'Verificar imagen hero'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n \u001b[90m 90 |\u001b[39m       \u001b[36mconst\u001b[39m heroImage \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'img[alt*=\"Ksero\"]'\u001b[39m)\u001b[33m.\u001b[39mfirst()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 91 |\u001b[39m       \u001b[36mawait\u001b[39m expect(heroImage)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 92 |\u001b[39m       \n \u001b[90m 93 |\u001b[39m       \u001b[90m// Validación técnica: verificar que la imagen cargó correctamente\u001b[39m\n \u001b[90m 94 |\u001b[39m       \u001b[36mconst\u001b[39m imageLoaded \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m heroImage\u001b[33m.\u001b[39mevaluate((img) \u001b[33m=>\u001b[39m {\u001b[0m"
+                          }
+                        }
+                      ],
+                      "startTime": "2025-10-27T22:16:45.825Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\sebas\\OneDrive\\Escritorio\\automatizacion-ksero\\test-results\\home-CP-01-Verificación-de-113c3-ales-de-la-página-de-inicio-chromium-retry2\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\sebas\\OneDrive\\Escritorio\\automatizacion-ksero\\test-results\\home-CP-01-Verificación-de-113c3-ales-de-la-página-de-inicio-chromium-retry2\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\sebas\\OneDrive\\Escritorio\\automatizacion-ksero\\test-results\\home-CP-01-Verificación-de-113c3-ales-de-la-página-de-inicio-chromium-retry2\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\sebas\\OneDrive\\Escritorio\\automatizacion-ksero\\tests\\home.spec.js",
+                        "column": 31,
+                        "line": 91
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "379953442ddfc3019abd-f390d4fea8c5d10da4a4",
+              "file": "home.spec.js",
+              "line": 22,
+              "column": 3
+            },
+            {
+              "title": "la página debe cargar en menos de 3 segundos",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1711,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "✓ Tiempo de carga: 121ms\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-10-27T22:16:55.908Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "379953442ddfc3019abd-c86a80d062d1dff75228",
+              "file": "home.spec.js",
+              "line": 104,
+              "column": 3
+            },
+            {
+              "title": "debe ser responsive en diferentes tamaños de pantalla",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1561,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-10-27T22:16:58.165Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "379953442ddfc3019abd-e40000d436cb51bf737c",
+              "file": "home.spec.js",
+              "line": 119,
+              "column": 3
+            },
+            {
+              "title": "los botones deben cambiar de estilo en hover",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2017,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Color inicial: rgb(22, 163, 74), Color hover: rgb(21, 128, 61)\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-10-27T22:16:59.753Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "379953442ddfc3019abd-af7055aa7241f2358850",
+              "file": "home.spec.js",
+              "line": 137,
+              "column": 3
+            },
+            {
+              "title": "debe cumplir con estándares básicos de accesibilidad",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1496,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-10-27T22:17:05.613Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "379953442ddfc3019abd-57bdd9d85791e654b2d3",
+              "file": "home.spec.js",
+              "line": 194,
+              "column": 3
+            },
+            {
+              "title": "debe mostrar todos los elementos principales de la página de inicio",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 13431,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('img[alt*=\"Ksero\"]').first()\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('img[alt*=\"Ksero\"]').first()\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('img[alt*=\"Ksero\"]').first()\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('img[alt*=\"Ksero\"]').first()\u001b[22m\n\n    at C:\\Users\\sebas\\OneDrive\\Escritorio\\automatizacion-ksero\\tests\\home.spec.js:91:31\n    at C:\\Users\\sebas\\OneDrive\\Escritorio\\automatizacion-ksero\\tests\\home.spec.js:89:16",
+                        "location": {
+                          "file": "C:\\Users\\sebas\\OneDrive\\Escritorio\\automatizacion-ksero\\tests\\home.spec.js",
+                          "column": 31,
+                          "line": 91
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 89 |\u001b[39m     \u001b[36mawait\u001b[39m test\u001b[33m.\u001b[39mstep(\u001b[32m'Verificar imagen hero'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n \u001b[90m 90 |\u001b[39m       \u001b[36mconst\u001b[39m heroImage \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'img[alt*=\"Ksero\"]'\u001b[39m)\u001b[33m.\u001b[39mfirst()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 91 |\u001b[39m       \u001b[36mawait\u001b[39m expect(heroImage)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 92 |\u001b[39m       \n \u001b[90m 93 |\u001b[39m       \u001b[90m// Validación técnica: verificar que la imagen cargó correctamente\u001b[39m\n \u001b[90m 94 |\u001b[39m       \u001b[36mconst\u001b[39m imageLoaded \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m heroImage\u001b[33m.\u001b[39mevaluate((img) \u001b[33m=>\u001b[39m {\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\sebas\\OneDrive\\Escritorio\\automatizacion-ksero\\tests\\home.spec.js",
+                            "column": 31,
+                            "line": 91
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('img[alt*=\"Ksero\"]').first()\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('img[alt*=\"Ksero\"]').first()\u001b[22m\n\n\n\u001b[0m \u001b[90m 89 |\u001b[39m     \u001b[36mawait\u001b[39m test\u001b[33m.\u001b[39mstep(\u001b[32m'Verificar imagen hero'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n \u001b[90m 90 |\u001b[39m       \u001b[36mconst\u001b[39m heroImage \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'img[alt*=\"Ksero\"]'\u001b[39m)\u001b[33m.\u001b[39mfirst()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 91 |\u001b[39m       \u001b[36mawait\u001b[39m expect(heroImage)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 92 |\u001b[39m       \n \u001b[90m 93 |\u001b[39m       \u001b[90m// Validación técnica: verificar que la imagen cargó correctamente\u001b[39m\n \u001b[90m 94 |\u001b[39m       \u001b[36mconst\u001b[39m imageLoaded \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m heroImage\u001b[33m.\u001b[39mevaluate((img) \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[2m    at C:\\Users\\sebas\\OneDrive\\Escritorio\\automatizacion-ksero\\tests\\home.spec.js:91:31\u001b[22m\n\u001b[2m    at C:\\Users\\sebas\\OneDrive\\Escritorio\\automatizacion-ksero\\tests\\home.spec.js:89:16\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Verificar título principal",
+                          "duration": 146
+                        },
+                        {
+                          "title": "Verificar botón \"Ver Planes\"",
+                          "duration": 117
+                        },
+                        {
+                          "title": "Verificar botón \"Ver Menú\"",
+                          "duration": 31
+                        },
+                        {
+                          "title": "Verificar sección de beneficios",
+                          "duration": 199
+                        },
+                        {
+                          "title": "Verificar imagen hero",
+                          "duration": 5010,
+                          "error": {
+                            "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('img[alt*=\"Ksero\"]').first()\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('img[alt*=\"Ksero\"]').first()\u001b[22m\n",
+                            "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('img[alt*=\"Ksero\"]').first()\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('img[alt*=\"Ksero\"]').first()\u001b[22m\n\n    at C:\\Users\\sebas\\OneDrive\\Escritorio\\automatizacion-ksero\\tests\\home.spec.js:91:31\n    at C:\\Users\\sebas\\OneDrive\\Escritorio\\automatizacion-ksero\\tests\\home.spec.js:89:16",
+                            "location": {
+                              "file": "C:\\Users\\sebas\\OneDrive\\Escritorio\\automatizacion-ksero\\tests\\home.spec.js",
+                              "column": 31,
+                              "line": 91
+                            },
+                            "snippet": "\u001b[0m \u001b[90m 89 |\u001b[39m     \u001b[36mawait\u001b[39m test\u001b[33m.\u001b[39mstep(\u001b[32m'Verificar imagen hero'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n \u001b[90m 90 |\u001b[39m       \u001b[36mconst\u001b[39m heroImage \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'img[alt*=\"Ksero\"]'\u001b[39m)\u001b[33m.\u001b[39mfirst()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 91 |\u001b[39m       \u001b[36mawait\u001b[39m expect(heroImage)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 92 |\u001b[39m       \n \u001b[90m 93 |\u001b[39m       \u001b[90m// Validación técnica: verificar que la imagen cargó correctamente\u001b[39m\n \u001b[90m 94 |\u001b[39m       \u001b[36mconst\u001b[39m imageLoaded \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m heroImage\u001b[33m.\u001b[39mevaluate((img) \u001b[33m=>\u001b[39m {\u001b[0m"
+                          }
+                        }
+                      ],
+                      "startTime": "2025-10-27T22:17:11.380Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\sebas\\OneDrive\\Escritorio\\automatizacion-ksero\\test-results\\home-CP-01-Verificación-de-113c3-ales-de-la-página-de-inicio-firefox\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\sebas\\OneDrive\\Escritorio\\automatizacion-ksero\\test-results\\home-CP-01-Verificación-de-113c3-ales-de-la-página-de-inicio-firefox\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\sebas\\OneDrive\\Escritorio\\automatizacion-ksero\\test-results\\home-CP-01-Verificación-de-113c3-ales-de-la-página-de-inicio-firefox\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\sebas\\OneDrive\\Escritorio\\automatizacion-ksero\\tests\\home.spec.js",
+                        "column": 31,
+                        "line": 91
+                      }
+                    },
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 12164,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('img[alt*=\"Ksero\"]').first()\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('img[alt*=\"Ksero\"]').first()\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('img[alt*=\"Ksero\"]').first()\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('img[alt*=\"Ksero\"]').first()\u001b[22m\n\n    at C:\\Users\\sebas\\OneDrive\\Escritorio\\automatizacion-ksero\\tests\\home.spec.js:91:31\n    at C:\\Users\\sebas\\OneDrive\\Escritorio\\automatizacion-ksero\\tests\\home.spec.js:89:16",
+                        "location": {
+                          "file": "C:\\Users\\sebas\\OneDrive\\Escritorio\\automatizacion-ksero\\tests\\home.spec.js",
+                          "column": 31,
+                          "line": 91
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 89 |\u001b[39m     \u001b[36mawait\u001b[39m test\u001b[33m.\u001b[39mstep(\u001b[32m'Verificar imagen hero'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n \u001b[90m 90 |\u001b[39m       \u001b[36mconst\u001b[39m heroImage \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'img[alt*=\"Ksero\"]'\u001b[39m)\u001b[33m.\u001b[39mfirst()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 91 |\u001b[39m       \u001b[36mawait\u001b[39m expect(heroImage)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 92 |\u001b[39m       \n \u001b[90m 93 |\u001b[39m       \u001b[90m// Validación técnica: verificar que la imagen cargó correctamente\u001b[39m\n \u001b[90m 94 |\u001b[39m       \u001b[36mconst\u001b[39m imageLoaded \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m heroImage\u001b[33m.\u001b[39mevaluate((img) \u001b[33m=>\u001b[39m {\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\sebas\\OneDrive\\Escritorio\\automatizacion-ksero\\tests\\home.spec.js",
+                            "column": 31,
+                            "line": 91
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('img[alt*=\"Ksero\"]').first()\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('img[alt*=\"Ksero\"]').first()\u001b[22m\n\n\n\u001b[0m \u001b[90m 89 |\u001b[39m     \u001b[36mawait\u001b[39m test\u001b[33m.\u001b[39mstep(\u001b[32m'Verificar imagen hero'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n \u001b[90m 90 |\u001b[39m       \u001b[36mconst\u001b[39m heroImage \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'img[alt*=\"Ksero\"]'\u001b[39m)\u001b[33m.\u001b[39mfirst()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 91 |\u001b[39m       \u001b[36mawait\u001b[39m expect(heroImage)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 92 |\u001b[39m       \n \u001b[90m 93 |\u001b[39m       \u001b[90m// Validación técnica: verificar que la imagen cargó correctamente\u001b[39m\n \u001b[90m 94 |\u001b[39m       \u001b[36mconst\u001b[39m imageLoaded \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m heroImage\u001b[33m.\u001b[39mevaluate((img) \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[2m    at C:\\Users\\sebas\\OneDrive\\Escritorio\\automatizacion-ksero\\tests\\home.spec.js:91:31\u001b[22m\n\u001b[2m    at C:\\Users\\sebas\\OneDrive\\Escritorio\\automatizacion-ksero\\tests\\home.spec.js:89:16\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 1,
+                      "steps": [
+                        {
+                          "title": "Verificar título principal",
+                          "duration": 131
+                        },
+                        {
+                          "title": "Verificar botón \"Ver Planes\"",
+                          "duration": 113
+                        },
+                        {
+                          "title": "Verificar botón \"Ver Menú\"",
+                          "duration": 39
+                        },
+                        {
+                          "title": "Verificar sección de beneficios",
+                          "duration": 159
+                        },
+                        {
+                          "title": "Verificar imagen hero",
+                          "duration": 5030,
+                          "error": {
+                            "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('img[alt*=\"Ksero\"]').first()\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('img[alt*=\"Ksero\"]').first()\u001b[22m\n",
+                            "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('img[alt*=\"Ksero\"]').first()\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('img[alt*=\"Ksero\"]').first()\u001b[22m\n\n    at C:\\Users\\sebas\\OneDrive\\Escritorio\\automatizacion-ksero\\tests\\home.spec.js:91:31\n    at C:\\Users\\sebas\\OneDrive\\Escritorio\\automatizacion-ksero\\tests\\home.spec.js:89:16",
+                            "location": {
+                              "file": "C:\\Users\\sebas\\OneDrive\\Escritorio\\automatizacion-ksero\\tests\\home.spec.js",
+                              "column": 31,
+                              "line": 91
+                            },
+                            "snippet": "\u001b[0m \u001b[90m 89 |\u001b[39m     \u001b[36mawait\u001b[39m test\u001b[33m.\u001b[39mstep(\u001b[32m'Verificar imagen hero'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n \u001b[90m 90 |\u001b[39m       \u001b[36mconst\u001b[39m heroImage \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'img[alt*=\"Ksero\"]'\u001b[39m)\u001b[33m.\u001b[39mfirst()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 91 |\u001b[39m       \u001b[36mawait\u001b[39m expect(heroImage)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 92 |\u001b[39m       \n \u001b[90m 93 |\u001b[39m       \u001b[90m// Validación técnica: verificar que la imagen cargó correctamente\u001b[39m\n \u001b[90m 94 |\u001b[39m       \u001b[36mconst\u001b[39m imageLoaded \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m heroImage\u001b[33m.\u001b[39mevaluate((img) \u001b[33m=>\u001b[39m {\u001b[0m"
+                          }
+                        }
+                      ],
+                      "startTime": "2025-10-27T22:17:32.738Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\sebas\\OneDrive\\Escritorio\\automatizacion-ksero\\test-results\\home-CP-01-Verificación-de-113c3-ales-de-la-página-de-inicio-firefox-retry1\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\sebas\\OneDrive\\Escritorio\\automatizacion-ksero\\test-results\\home-CP-01-Verificación-de-113c3-ales-de-la-página-de-inicio-firefox-retry1\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\sebas\\OneDrive\\Escritorio\\automatizacion-ksero\\test-results\\home-CP-01-Verificación-de-113c3-ales-de-la-página-de-inicio-firefox-retry1\\error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\sebas\\OneDrive\\Escritorio\\automatizacion-ksero\\test-results\\home-CP-01-Verificación-de-113c3-ales-de-la-página-de-inicio-firefox-retry1\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\sebas\\OneDrive\\Escritorio\\automatizacion-ksero\\tests\\home.spec.js",
+                        "column": 31,
+                        "line": 91
+                      }
+                    },
+                    {
+                      "workerIndex": 6,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 11584,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('img[alt*=\"Ksero\"]').first()\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('img[alt*=\"Ksero\"]').first()\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('img[alt*=\"Ksero\"]').first()\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('img[alt*=\"Ksero\"]').first()\u001b[22m\n\n    at C:\\Users\\sebas\\OneDrive\\Escritorio\\automatizacion-ksero\\tests\\home.spec.js:91:31\n    at C:\\Users\\sebas\\OneDrive\\Escritorio\\automatizacion-ksero\\tests\\home.spec.js:89:16",
+                        "location": {
+                          "file": "C:\\Users\\sebas\\OneDrive\\Escritorio\\automatizacion-ksero\\tests\\home.spec.js",
+                          "column": 31,
+                          "line": 91
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 89 |\u001b[39m     \u001b[36mawait\u001b[39m test\u001b[33m.\u001b[39mstep(\u001b[32m'Verificar imagen hero'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n \u001b[90m 90 |\u001b[39m       \u001b[36mconst\u001b[39m heroImage \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'img[alt*=\"Ksero\"]'\u001b[39m)\u001b[33m.\u001b[39mfirst()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 91 |\u001b[39m       \u001b[36mawait\u001b[39m expect(heroImage)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 92 |\u001b[39m       \n \u001b[90m 93 |\u001b[39m       \u001b[90m// Validación técnica: verificar que la imagen cargó correctamente\u001b[39m\n \u001b[90m 94 |\u001b[39m       \u001b[36mconst\u001b[39m imageLoaded \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m heroImage\u001b[33m.\u001b[39mevaluate((img) \u001b[33m=>\u001b[39m {\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\sebas\\OneDrive\\Escritorio\\automatizacion-ksero\\tests\\home.spec.js",
+                            "column": 31,
+                            "line": 91
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('img[alt*=\"Ksero\"]').first()\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('img[alt*=\"Ksero\"]').first()\u001b[22m\n\n\n\u001b[0m \u001b[90m 89 |\u001b[39m     \u001b[36mawait\u001b[39m test\u001b[33m.\u001b[39mstep(\u001b[32m'Verificar imagen hero'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n \u001b[90m 90 |\u001b[39m       \u001b[36mconst\u001b[39m heroImage \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'img[alt*=\"Ksero\"]'\u001b[39m)\u001b[33m.\u001b[39mfirst()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 91 |\u001b[39m       \u001b[36mawait\u001b[39m expect(heroImage)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 92 |\u001b[39m       \n \u001b[90m 93 |\u001b[39m       \u001b[90m// Validación técnica: verificar que la imagen cargó correctamente\u001b[39m\n \u001b[90m 94 |\u001b[39m       \u001b[36mconst\u001b[39m imageLoaded \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m heroImage\u001b[33m.\u001b[39mevaluate((img) \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[2m    at C:\\Users\\sebas\\OneDrive\\Escritorio\\automatizacion-ksero\\tests\\home.spec.js:91:31\u001b[22m\n\u001b[2m    at C:\\Users\\sebas\\OneDrive\\Escritorio\\automatizacion-ksero\\tests\\home.spec.js:89:16\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 2,
+                      "steps": [
+                        {
+                          "title": "Verificar título principal",
+                          "duration": 100
+                        },
+                        {
+                          "title": "Verificar botón \"Ver Planes\"",
+                          "duration": 112
+                        },
+                        {
+                          "title": "Verificar botón \"Ver Menú\"",
+                          "duration": 30
+                        },
+                        {
+                          "title": "Verificar sección de beneficios",
+                          "duration": 150
+                        },
+                        {
+                          "title": "Verificar imagen hero",
+                          "duration": 5006,
+                          "error": {
+                            "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('img[alt*=\"Ksero\"]').first()\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('img[alt*=\"Ksero\"]').first()\u001b[22m\n",
+                            "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('img[alt*=\"Ksero\"]').first()\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('img[alt*=\"Ksero\"]').first()\u001b[22m\n\n    at C:\\Users\\sebas\\OneDrive\\Escritorio\\automatizacion-ksero\\tests\\home.spec.js:91:31\n    at C:\\Users\\sebas\\OneDrive\\Escritorio\\automatizacion-ksero\\tests\\home.spec.js:89:16",
+                            "location": {
+                              "file": "C:\\Users\\sebas\\OneDrive\\Escritorio\\automatizacion-ksero\\tests\\home.spec.js",
+                              "column": 31,
+                              "line": 91
+                            },
+                            "snippet": "\u001b[0m \u001b[90m 89 |\u001b[39m     \u001b[36mawait\u001b[39m test\u001b[33m.\u001b[39mstep(\u001b[32m'Verificar imagen hero'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n \u001b[90m 90 |\u001b[39m       \u001b[36mconst\u001b[39m heroImage \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'img[alt*=\"Ksero\"]'\u001b[39m)\u001b[33m.\u001b[39mfirst()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 91 |\u001b[39m       \u001b[36mawait\u001b[39m expect(heroImage)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 92 |\u001b[39m       \n \u001b[90m 93 |\u001b[39m       \u001b[90m// Validación técnica: verificar que la imagen cargó correctamente\u001b[39m\n \u001b[90m 94 |\u001b[39m       \u001b[36mconst\u001b[39m imageLoaded \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m heroImage\u001b[33m.\u001b[39mevaluate((img) \u001b[33m=>\u001b[39m {\u001b[0m"
+                          }
+                        }
+                      ],
+                      "startTime": "2025-10-27T22:17:50.006Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\sebas\\OneDrive\\Escritorio\\automatizacion-ksero\\test-results\\home-CP-01-Verificación-de-113c3-ales-de-la-página-de-inicio-firefox-retry2\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\sebas\\OneDrive\\Escritorio\\automatizacion-ksero\\test-results\\home-CP-01-Verificación-de-113c3-ales-de-la-página-de-inicio-firefox-retry2\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\sebas\\OneDrive\\Escritorio\\automatizacion-ksero\\test-results\\home-CP-01-Verificación-de-113c3-ales-de-la-página-de-inicio-firefox-retry2\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\sebas\\OneDrive\\Escritorio\\automatizacion-ksero\\tests\\home.spec.js",
+                        "column": 31,
+                        "line": 91
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "379953442ddfc3019abd-41b8363f9f0fb7db4274",
+              "file": "home.spec.js",
+              "line": 22,
+              "column": 3
+            },
+            {
+              "title": "la página debe cargar en menos de 3 segundos",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 7,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 6520,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "✓ Tiempo de carga: 233ms\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-10-27T22:18:05.845Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "379953442ddfc3019abd-c5a9bc675aab6de7f82b",
+              "file": "home.spec.js",
+              "line": 104,
+              "column": 3
+            },
+            {
+              "title": "debe ser responsive en diferentes tamaños de pantalla",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 7,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 4135,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-10-27T22:18:13.596Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "379953442ddfc3019abd-4d98ac1bc235780791a2",
+              "file": "home.spec.js",
+              "line": 119,
+              "column": 3
+            },
+            {
+              "title": "los botones deben cambiar de estilo en hover",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 7,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 4222,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Color inicial: rgb(22, 163, 74), Color hover: rgb(21, 128, 61)\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-10-27T22:18:17.762Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "379953442ddfc3019abd-90f71237d4833ff8b607",
+              "file": "home.spec.js",
+              "line": 137,
+              "column": 3
+            },
+            {
+              "title": "debe cumplir con estándares básicos de accesibilidad",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 7,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3863,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-10-27T22:18:29.740Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "379953442ddfc3019abd-9566b4483099c011ad58",
+              "file": "home.spec.js",
+              "line": 194,
+              "column": 3
+            },
+            {
+              "title": "debe mostrar todos los elementos principales de la página de inicio",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 8,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 8739,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('img[alt*=\"Ksero\"]').first()\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('img[alt*=\"Ksero\"]').first()\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('img[alt*=\"Ksero\"]').first()\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('img[alt*=\"Ksero\"]').first()\u001b[22m\n\n    at C:\\Users\\sebas\\OneDrive\\Escritorio\\automatizacion-ksero\\tests\\home.spec.js:91:31\n    at C:\\Users\\sebas\\OneDrive\\Escritorio\\automatizacion-ksero\\tests\\home.spec.js:89:16",
+                        "location": {
+                          "file": "C:\\Users\\sebas\\OneDrive\\Escritorio\\automatizacion-ksero\\tests\\home.spec.js",
+                          "column": 31,
+                          "line": 91
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 89 |\u001b[39m     \u001b[36mawait\u001b[39m test\u001b[33m.\u001b[39mstep(\u001b[32m'Verificar imagen hero'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n \u001b[90m 90 |\u001b[39m       \u001b[36mconst\u001b[39m heroImage \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'img[alt*=\"Ksero\"]'\u001b[39m)\u001b[33m.\u001b[39mfirst()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 91 |\u001b[39m       \u001b[36mawait\u001b[39m expect(heroImage)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 92 |\u001b[39m       \n \u001b[90m 93 |\u001b[39m       \u001b[90m// Validación técnica: verificar que la imagen cargó correctamente\u001b[39m\n \u001b[90m 94 |\u001b[39m       \u001b[36mconst\u001b[39m imageLoaded \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m heroImage\u001b[33m.\u001b[39mevaluate((img) \u001b[33m=>\u001b[39m {\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\sebas\\OneDrive\\Escritorio\\automatizacion-ksero\\tests\\home.spec.js",
+                            "column": 31,
+                            "line": 91
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('img[alt*=\"Ksero\"]').first()\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('img[alt*=\"Ksero\"]').first()\u001b[22m\n\n\n\u001b[0m \u001b[90m 89 |\u001b[39m     \u001b[36mawait\u001b[39m test\u001b[33m.\u001b[39mstep(\u001b[32m'Verificar imagen hero'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n \u001b[90m 90 |\u001b[39m       \u001b[36mconst\u001b[39m heroImage \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'img[alt*=\"Ksero\"]'\u001b[39m)\u001b[33m.\u001b[39mfirst()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 91 |\u001b[39m       \u001b[36mawait\u001b[39m expect(heroImage)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 92 |\u001b[39m       \n \u001b[90m 93 |\u001b[39m       \u001b[90m// Validación técnica: verificar que la imagen cargó correctamente\u001b[39m\n \u001b[90m 94 |\u001b[39m       \u001b[36mconst\u001b[39m imageLoaded \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m heroImage\u001b[33m.\u001b[39mevaluate((img) \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[2m    at C:\\Users\\sebas\\OneDrive\\Escritorio\\automatizacion-ksero\\tests\\home.spec.js:91:31\u001b[22m\n\u001b[2m    at C:\\Users\\sebas\\OneDrive\\Escritorio\\automatizacion-ksero\\tests\\home.spec.js:89:16\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Verificar título principal",
+                          "duration": 94
+                        },
+                        {
+                          "title": "Verificar botón \"Ver Planes\"",
+                          "duration": 84
+                        },
+                        {
+                          "title": "Verificar botón \"Ver Menú\"",
+                          "duration": 24
+                        },
+                        {
+                          "title": "Verificar sección de beneficios",
+                          "duration": 261
+                        },
+                        {
+                          "title": "Verificar imagen hero",
+                          "duration": 5021,
+                          "error": {
+                            "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('img[alt*=\"Ksero\"]').first()\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('img[alt*=\"Ksero\"]').first()\u001b[22m\n",
+                            "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('img[alt*=\"Ksero\"]').first()\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('img[alt*=\"Ksero\"]').first()\u001b[22m\n\n    at C:\\Users\\sebas\\OneDrive\\Escritorio\\automatizacion-ksero\\tests\\home.spec.js:91:31\n    at C:\\Users\\sebas\\OneDrive\\Escritorio\\automatizacion-ksero\\tests\\home.spec.js:89:16",
+                            "location": {
+                              "file": "C:\\Users\\sebas\\OneDrive\\Escritorio\\automatizacion-ksero\\tests\\home.spec.js",
+                              "column": 31,
+                              "line": 91
+                            },
+                            "snippet": "\u001b[0m \u001b[90m 89 |\u001b[39m     \u001b[36mawait\u001b[39m test\u001b[33m.\u001b[39mstep(\u001b[32m'Verificar imagen hero'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n \u001b[90m 90 |\u001b[39m       \u001b[36mconst\u001b[39m heroImage \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'img[alt*=\"Ksero\"]'\u001b[39m)\u001b[33m.\u001b[39mfirst()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 91 |\u001b[39m       \u001b[36mawait\u001b[39m expect(heroImage)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 92 |\u001b[39m       \n \u001b[90m 93 |\u001b[39m       \u001b[90m// Validación técnica: verificar que la imagen cargó correctamente\u001b[39m\n \u001b[90m 94 |\u001b[39m       \u001b[36mconst\u001b[39m imageLoaded \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m heroImage\u001b[33m.\u001b[39mevaluate((img) \u001b[33m=>\u001b[39m {\u001b[0m"
+                          }
+                        }
+                      ],
+                      "startTime": "2025-10-27T22:18:46.677Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\sebas\\OneDrive\\Escritorio\\automatizacion-ksero\\test-results\\home-CP-01-Verificación-de-113c3-ales-de-la-página-de-inicio-webkit\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\sebas\\OneDrive\\Escritorio\\automatizacion-ksero\\test-results\\home-CP-01-Verificación-de-113c3-ales-de-la-página-de-inicio-webkit\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\sebas\\OneDrive\\Escritorio\\automatizacion-ksero\\test-results\\home-CP-01-Verificación-de-113c3-ales-de-la-página-de-inicio-webkit\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\sebas\\OneDrive\\Escritorio\\automatizacion-ksero\\tests\\home.spec.js",
+                        "column": 31,
+                        "line": 91
+                      }
+                    },
+                    {
+                      "workerIndex": 9,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 7799,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('img[alt*=\"Ksero\"]').first()\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('img[alt*=\"Ksero\"]').first()\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('img[alt*=\"Ksero\"]').first()\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('img[alt*=\"Ksero\"]').first()\u001b[22m\n\n    at C:\\Users\\sebas\\OneDrive\\Escritorio\\automatizacion-ksero\\tests\\home.spec.js:91:31\n    at C:\\Users\\sebas\\OneDrive\\Escritorio\\automatizacion-ksero\\tests\\home.spec.js:89:16",
+                        "location": {
+                          "file": "C:\\Users\\sebas\\OneDrive\\Escritorio\\automatizacion-ksero\\tests\\home.spec.js",
+                          "column": 31,
+                          "line": 91
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 89 |\u001b[39m     \u001b[36mawait\u001b[39m test\u001b[33m.\u001b[39mstep(\u001b[32m'Verificar imagen hero'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n \u001b[90m 90 |\u001b[39m       \u001b[36mconst\u001b[39m heroImage \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'img[alt*=\"Ksero\"]'\u001b[39m)\u001b[33m.\u001b[39mfirst()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 91 |\u001b[39m       \u001b[36mawait\u001b[39m expect(heroImage)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 92 |\u001b[39m       \n \u001b[90m 93 |\u001b[39m       \u001b[90m// Validación técnica: verificar que la imagen cargó correctamente\u001b[39m\n \u001b[90m 94 |\u001b[39m       \u001b[36mconst\u001b[39m imageLoaded \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m heroImage\u001b[33m.\u001b[39mevaluate((img) \u001b[33m=>\u001b[39m {\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\sebas\\OneDrive\\Escritorio\\automatizacion-ksero\\tests\\home.spec.js",
+                            "column": 31,
+                            "line": 91
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('img[alt*=\"Ksero\"]').first()\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('img[alt*=\"Ksero\"]').first()\u001b[22m\n\n\n\u001b[0m \u001b[90m 89 |\u001b[39m     \u001b[36mawait\u001b[39m test\u001b[33m.\u001b[39mstep(\u001b[32m'Verificar imagen hero'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n \u001b[90m 90 |\u001b[39m       \u001b[36mconst\u001b[39m heroImage \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'img[alt*=\"Ksero\"]'\u001b[39m)\u001b[33m.\u001b[39mfirst()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 91 |\u001b[39m       \u001b[36mawait\u001b[39m expect(heroImage)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 92 |\u001b[39m       \n \u001b[90m 93 |\u001b[39m       \u001b[90m// Validación técnica: verificar que la imagen cargó correctamente\u001b[39m\n \u001b[90m 94 |\u001b[39m       \u001b[36mconst\u001b[39m imageLoaded \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m heroImage\u001b[33m.\u001b[39mevaluate((img) \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[2m    at C:\\Users\\sebas\\OneDrive\\Escritorio\\automatizacion-ksero\\tests\\home.spec.js:91:31\u001b[22m\n\u001b[2m    at C:\\Users\\sebas\\OneDrive\\Escritorio\\automatizacion-ksero\\tests\\home.spec.js:89:16\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 1,
+                      "steps": [
+                        {
+                          "title": "Verificar título principal",
+                          "duration": 180
+                        },
+                        {
+                          "title": "Verificar botón \"Ver Planes\"",
+                          "duration": 170
+                        },
+                        {
+                          "title": "Verificar botón \"Ver Menú\"",
+                          "duration": 28
+                        },
+                        {
+                          "title": "Verificar sección de beneficios",
+                          "duration": 404
+                        },
+                        {
+                          "title": "Verificar imagen hero",
+                          "duration": 5032,
+                          "error": {
+                            "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('img[alt*=\"Ksero\"]').first()\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('img[alt*=\"Ksero\"]').first()\u001b[22m\n",
+                            "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('img[alt*=\"Ksero\"]').first()\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('img[alt*=\"Ksero\"]').first()\u001b[22m\n\n    at C:\\Users\\sebas\\OneDrive\\Escritorio\\automatizacion-ksero\\tests\\home.spec.js:91:31\n    at C:\\Users\\sebas\\OneDrive\\Escritorio\\automatizacion-ksero\\tests\\home.spec.js:89:16",
+                            "location": {
+                              "file": "C:\\Users\\sebas\\OneDrive\\Escritorio\\automatizacion-ksero\\tests\\home.spec.js",
+                              "column": 31,
+                              "line": 91
+                            },
+                            "snippet": "\u001b[0m \u001b[90m 89 |\u001b[39m     \u001b[36mawait\u001b[39m test\u001b[33m.\u001b[39mstep(\u001b[32m'Verificar imagen hero'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n \u001b[90m 90 |\u001b[39m       \u001b[36mconst\u001b[39m heroImage \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'img[alt*=\"Ksero\"]'\u001b[39m)\u001b[33m.\u001b[39mfirst()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 91 |\u001b[39m       \u001b[36mawait\u001b[39m expect(heroImage)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 92 |\u001b[39m       \n \u001b[90m 93 |\u001b[39m       \u001b[90m// Validación técnica: verificar que la imagen cargó correctamente\u001b[39m\n \u001b[90m 94 |\u001b[39m       \u001b[36mconst\u001b[39m imageLoaded \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m heroImage\u001b[33m.\u001b[39mevaluate((img) \u001b[33m=>\u001b[39m {\u001b[0m"
+                          }
+                        }
+                      ],
+                      "startTime": "2025-10-27T22:18:57.622Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\sebas\\OneDrive\\Escritorio\\automatizacion-ksero\\test-results\\home-CP-01-Verificación-de-113c3-ales-de-la-página-de-inicio-webkit-retry1\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\sebas\\OneDrive\\Escritorio\\automatizacion-ksero\\test-results\\home-CP-01-Verificación-de-113c3-ales-de-la-página-de-inicio-webkit-retry1\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\sebas\\OneDrive\\Escritorio\\automatizacion-ksero\\test-results\\home-CP-01-Verificación-de-113c3-ales-de-la-página-de-inicio-webkit-retry1\\error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\sebas\\OneDrive\\Escritorio\\automatizacion-ksero\\test-results\\home-CP-01-Verificación-de-113c3-ales-de-la-página-de-inicio-webkit-retry1\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\sebas\\OneDrive\\Escritorio\\automatizacion-ksero\\tests\\home.spec.js",
+                        "column": 31,
+                        "line": 91
+                      }
+                    },
+                    {
+                      "workerIndex": 10,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 7700,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('img[alt*=\"Ksero\"]').first()\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('img[alt*=\"Ksero\"]').first()\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('img[alt*=\"Ksero\"]').first()\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('img[alt*=\"Ksero\"]').first()\u001b[22m\n\n    at C:\\Users\\sebas\\OneDrive\\Escritorio\\automatizacion-ksero\\tests\\home.spec.js:91:31\n    at C:\\Users\\sebas\\OneDrive\\Escritorio\\automatizacion-ksero\\tests\\home.spec.js:89:16",
+                        "location": {
+                          "file": "C:\\Users\\sebas\\OneDrive\\Escritorio\\automatizacion-ksero\\tests\\home.spec.js",
+                          "column": 31,
+                          "line": 91
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 89 |\u001b[39m     \u001b[36mawait\u001b[39m test\u001b[33m.\u001b[39mstep(\u001b[32m'Verificar imagen hero'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n \u001b[90m 90 |\u001b[39m       \u001b[36mconst\u001b[39m heroImage \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'img[alt*=\"Ksero\"]'\u001b[39m)\u001b[33m.\u001b[39mfirst()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 91 |\u001b[39m       \u001b[36mawait\u001b[39m expect(heroImage)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 92 |\u001b[39m       \n \u001b[90m 93 |\u001b[39m       \u001b[90m// Validación técnica: verificar que la imagen cargó correctamente\u001b[39m\n \u001b[90m 94 |\u001b[39m       \u001b[36mconst\u001b[39m imageLoaded \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m heroImage\u001b[33m.\u001b[39mevaluate((img) \u001b[33m=>\u001b[39m {\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\sebas\\OneDrive\\Escritorio\\automatizacion-ksero\\tests\\home.spec.js",
+                            "column": 31,
+                            "line": 91
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('img[alt*=\"Ksero\"]').first()\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('img[alt*=\"Ksero\"]').first()\u001b[22m\n\n\n\u001b[0m \u001b[90m 89 |\u001b[39m     \u001b[36mawait\u001b[39m test\u001b[33m.\u001b[39mstep(\u001b[32m'Verificar imagen hero'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n \u001b[90m 90 |\u001b[39m       \u001b[36mconst\u001b[39m heroImage \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'img[alt*=\"Ksero\"]'\u001b[39m)\u001b[33m.\u001b[39mfirst()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 91 |\u001b[39m       \u001b[36mawait\u001b[39m expect(heroImage)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 92 |\u001b[39m       \n \u001b[90m 93 |\u001b[39m       \u001b[90m// Validación técnica: verificar que la imagen cargó correctamente\u001b[39m\n \u001b[90m 94 |\u001b[39m       \u001b[36mconst\u001b[39m imageLoaded \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m heroImage\u001b[33m.\u001b[39mevaluate((img) \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[2m    at C:\\Users\\sebas\\OneDrive\\Escritorio\\automatizacion-ksero\\tests\\home.spec.js:91:31\u001b[22m\n\u001b[2m    at C:\\Users\\sebas\\OneDrive\\Escritorio\\automatizacion-ksero\\tests\\home.spec.js:89:16\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 2,
+                      "steps": [
+                        {
+                          "title": "Verificar título principal",
+                          "duration": 79
+                        },
+                        {
+                          "title": "Verificar botón \"Ver Planes\"",
+                          "duration": 73
+                        },
+                        {
+                          "title": "Verificar botón \"Ver Menú\"",
+                          "duration": 20
+                        },
+                        {
+                          "title": "Verificar sección de beneficios",
+                          "duration": 207
+                        },
+                        {
+                          "title": "Verificar imagen hero",
+                          "duration": 5017,
+                          "error": {
+                            "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('img[alt*=\"Ksero\"]').first()\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('img[alt*=\"Ksero\"]').first()\u001b[22m\n",
+                            "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('img[alt*=\"Ksero\"]').first()\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('img[alt*=\"Ksero\"]').first()\u001b[22m\n\n    at C:\\Users\\sebas\\OneDrive\\Escritorio\\automatizacion-ksero\\tests\\home.spec.js:91:31\n    at C:\\Users\\sebas\\OneDrive\\Escritorio\\automatizacion-ksero\\tests\\home.spec.js:89:16",
+                            "location": {
+                              "file": "C:\\Users\\sebas\\OneDrive\\Escritorio\\automatizacion-ksero\\tests\\home.spec.js",
+                              "column": 31,
+                              "line": 91
+                            },
+                            "snippet": "\u001b[0m \u001b[90m 89 |\u001b[39m     \u001b[36mawait\u001b[39m test\u001b[33m.\u001b[39mstep(\u001b[32m'Verificar imagen hero'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n \u001b[90m 90 |\u001b[39m       \u001b[36mconst\u001b[39m heroImage \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'img[alt*=\"Ksero\"]'\u001b[39m)\u001b[33m.\u001b[39mfirst()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 91 |\u001b[39m       \u001b[36mawait\u001b[39m expect(heroImage)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 92 |\u001b[39m       \n \u001b[90m 93 |\u001b[39m       \u001b[90m// Validación técnica: verificar que la imagen cargó correctamente\u001b[39m\n \u001b[90m 94 |\u001b[39m       \u001b[36mconst\u001b[39m imageLoaded \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m heroImage\u001b[33m.\u001b[39mevaluate((img) \u001b[33m=>\u001b[39m {\u001b[0m"
+                          }
+                        }
+                      ],
+                      "startTime": "2025-10-27T22:19:07.141Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\sebas\\OneDrive\\Escritorio\\automatizacion-ksero\\test-results\\home-CP-01-Verificación-de-113c3-ales-de-la-página-de-inicio-webkit-retry2\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\sebas\\OneDrive\\Escritorio\\automatizacion-ksero\\test-results\\home-CP-01-Verificación-de-113c3-ales-de-la-página-de-inicio-webkit-retry2\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\sebas\\OneDrive\\Escritorio\\automatizacion-ksero\\test-results\\home-CP-01-Verificación-de-113c3-ales-de-la-página-de-inicio-webkit-retry2\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\sebas\\OneDrive\\Escritorio\\automatizacion-ksero\\tests\\home.spec.js",
+                        "column": 31,
+                        "line": 91
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "379953442ddfc3019abd-e4d761c0aed4fa1bd083",
+              "file": "home.spec.js",
+              "line": 22,
+              "column": 3
+            },
+            {
+              "title": "la página debe cargar en menos de 3 segundos",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 11,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2263,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "✓ Tiempo de carga: 197ms\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-10-27T22:19:16.681Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "379953442ddfc3019abd-8dc1617aebe5eed95cf8",
+              "file": "home.spec.js",
+              "line": 104,
+              "column": 3
+            },
+            {
+              "title": "debe ser responsive en diferentes tamaños de pantalla",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 11,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1848,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-10-27T22:19:19.151Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "379953442ddfc3019abd-44889e916a16fb8dead9",
+              "file": "home.spec.js",
+              "line": 119,
+              "column": 3
+            },
+            {
+              "title": "los botones deben cambiar de estilo en hover",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 11,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2811,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Color inicial: rgb(22, 163, 74), Color hover: rgb(21, 128, 61)\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-10-27T22:19:21.041Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "379953442ddfc3019abd-6af96e11029133302edf",
+              "file": "home.spec.js",
+              "line": 137,
+              "column": 3
+            },
+            {
+              "title": "debe cumplir con estándares básicos de accesibilidad",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 11,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1979,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-10-27T22:19:27.476Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "379953442ddfc3019abd-10e62e3d4bdc16f8845f",
+              "file": "home.spec.js",
+              "line": 194,
+              "column": 3
+            },
+            {
+              "title": "debe mostrar todos los elementos principales de la página de inicio",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Mobile Chrome",
+                  "projectName": "Mobile Chrome",
+                  "results": [
+                    {
+                      "workerIndex": 12,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 7726,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('img[alt*=\"Ksero\"]').first()\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('img[alt*=\"Ksero\"]').first()\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('img[alt*=\"Ksero\"]').first()\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('img[alt*=\"Ksero\"]').first()\u001b[22m\n\n    at C:\\Users\\sebas\\OneDrive\\Escritorio\\automatizacion-ksero\\tests\\home.spec.js:91:31\n    at C:\\Users\\sebas\\OneDrive\\Escritorio\\automatizacion-ksero\\tests\\home.spec.js:89:16",
+                        "location": {
+                          "file": "C:\\Users\\sebas\\OneDrive\\Escritorio\\automatizacion-ksero\\tests\\home.spec.js",
+                          "column": 31,
+                          "line": 91
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 89 |\u001b[39m     \u001b[36mawait\u001b[39m test\u001b[33m.\u001b[39mstep(\u001b[32m'Verificar imagen hero'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n \u001b[90m 90 |\u001b[39m       \u001b[36mconst\u001b[39m heroImage \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'img[alt*=\"Ksero\"]'\u001b[39m)\u001b[33m.\u001b[39mfirst()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 91 |\u001b[39m       \u001b[36mawait\u001b[39m expect(heroImage)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 92 |\u001b[39m       \n \u001b[90m 93 |\u001b[39m       \u001b[90m// Validación técnica: verificar que la imagen cargó correctamente\u001b[39m\n \u001b[90m 94 |\u001b[39m       \u001b[36mconst\u001b[39m imageLoaded \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m heroImage\u001b[33m.\u001b[39mevaluate((img) \u001b[33m=>\u001b[39m {\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\sebas\\OneDrive\\Escritorio\\automatizacion-ksero\\tests\\home.spec.js",
+                            "column": 31,
+                            "line": 91
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('img[alt*=\"Ksero\"]').first()\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('img[alt*=\"Ksero\"]').first()\u001b[22m\n\n\n\u001b[0m \u001b[90m 89 |\u001b[39m     \u001b[36mawait\u001b[39m test\u001b[33m.\u001b[39mstep(\u001b[32m'Verificar imagen hero'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n \u001b[90m 90 |\u001b[39m       \u001b[36mconst\u001b[39m heroImage \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'img[alt*=\"Ksero\"]'\u001b[39m)\u001b[33m.\u001b[39mfirst()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 91 |\u001b[39m       \u001b[36mawait\u001b[39m expect(heroImage)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 92 |\u001b[39m       \n \u001b[90m 93 |\u001b[39m       \u001b[90m// Validación técnica: verificar que la imagen cargó correctamente\u001b[39m\n \u001b[90m 94 |\u001b[39m       \u001b[36mconst\u001b[39m imageLoaded \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m heroImage\u001b[33m.\u001b[39mevaluate((img) \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[2m    at C:\\Users\\sebas\\OneDrive\\Escritorio\\automatizacion-ksero\\tests\\home.spec.js:91:31\u001b[22m\n\u001b[2m    at C:\\Users\\sebas\\OneDrive\\Escritorio\\automatizacion-ksero\\tests\\home.spec.js:89:16\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Verificar título principal",
+                          "duration": 78
+                        },
+                        {
+                          "title": "Verificar botón \"Ver Planes\"",
+                          "duration": 73
+                        },
+                        {
+                          "title": "Verificar botón \"Ver Menú\"",
+                          "duration": 19
+                        },
+                        {
+                          "title": "Verificar sección de beneficios",
+                          "duration": 119
+                        },
+                        {
+                          "title": "Verificar imagen hero",
+                          "duration": 5023,
+                          "error": {
+                            "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('img[alt*=\"Ksero\"]').first()\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('img[alt*=\"Ksero\"]').first()\u001b[22m\n",
+                            "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('img[alt*=\"Ksero\"]').first()\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('img[alt*=\"Ksero\"]').first()\u001b[22m\n\n    at C:\\Users\\sebas\\OneDrive\\Escritorio\\automatizacion-ksero\\tests\\home.spec.js:91:31\n    at C:\\Users\\sebas\\OneDrive\\Escritorio\\automatizacion-ksero\\tests\\home.spec.js:89:16",
+                            "location": {
+                              "file": "C:\\Users\\sebas\\OneDrive\\Escritorio\\automatizacion-ksero\\tests\\home.spec.js",
+                              "column": 31,
+                              "line": 91
+                            },
+                            "snippet": "\u001b[0m \u001b[90m 89 |\u001b[39m     \u001b[36mawait\u001b[39m test\u001b[33m.\u001b[39mstep(\u001b[32m'Verificar imagen hero'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n \u001b[90m 90 |\u001b[39m       \u001b[36mconst\u001b[39m heroImage \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'img[alt*=\"Ksero\"]'\u001b[39m)\u001b[33m.\u001b[39mfirst()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 91 |\u001b[39m       \u001b[36mawait\u001b[39m expect(heroImage)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 92 |\u001b[39m       \n \u001b[90m 93 |\u001b[39m       \u001b[90m// Validación técnica: verificar que la imagen cargó correctamente\u001b[39m\n \u001b[90m 94 |\u001b[39m       \u001b[36mconst\u001b[39m imageLoaded \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m heroImage\u001b[33m.\u001b[39mevaluate((img) \u001b[33m=>\u001b[39m {\u001b[0m"
+                          }
+                        }
+                      ],
+                      "startTime": "2025-10-27T22:19:35.619Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\sebas\\OneDrive\\Escritorio\\automatizacion-ksero\\test-results\\home-CP-01-Verificación-de-113c3-ales-de-la-página-de-inicio-Mobile-Chrome\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\sebas\\OneDrive\\Escritorio\\automatizacion-ksero\\test-results\\home-CP-01-Verificación-de-113c3-ales-de-la-página-de-inicio-Mobile-Chrome\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\sebas\\OneDrive\\Escritorio\\automatizacion-ksero\\test-results\\home-CP-01-Verificación-de-113c3-ales-de-la-página-de-inicio-Mobile-Chrome\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\sebas\\OneDrive\\Escritorio\\automatizacion-ksero\\tests\\home.spec.js",
+                        "column": 31,
+                        "line": 91
+                      }
+                    },
+                    {
+                      "workerIndex": 13,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 7830,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('img[alt*=\"Ksero\"]').first()\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('img[alt*=\"Ksero\"]').first()\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('img[alt*=\"Ksero\"]').first()\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('img[alt*=\"Ksero\"]').first()\u001b[22m\n\n    at C:\\Users\\sebas\\OneDrive\\Escritorio\\automatizacion-ksero\\tests\\home.spec.js:91:31\n    at C:\\Users\\sebas\\OneDrive\\Escritorio\\automatizacion-ksero\\tests\\home.spec.js:89:16",
+                        "location": {
+                          "file": "C:\\Users\\sebas\\OneDrive\\Escritorio\\automatizacion-ksero\\tests\\home.spec.js",
+                          "column": 31,
+                          "line": 91
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 89 |\u001b[39m     \u001b[36mawait\u001b[39m test\u001b[33m.\u001b[39mstep(\u001b[32m'Verificar imagen hero'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n \u001b[90m 90 |\u001b[39m       \u001b[36mconst\u001b[39m heroImage \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'img[alt*=\"Ksero\"]'\u001b[39m)\u001b[33m.\u001b[39mfirst()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 91 |\u001b[39m       \u001b[36mawait\u001b[39m expect(heroImage)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 92 |\u001b[39m       \n \u001b[90m 93 |\u001b[39m       \u001b[90m// Validación técnica: verificar que la imagen cargó correctamente\u001b[39m\n \u001b[90m 94 |\u001b[39m       \u001b[36mconst\u001b[39m imageLoaded \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m heroImage\u001b[33m.\u001b[39mevaluate((img) \u001b[33m=>\u001b[39m {\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\sebas\\OneDrive\\Escritorio\\automatizacion-ksero\\tests\\home.spec.js",
+                            "column": 31,
+                            "line": 91
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('img[alt*=\"Ksero\"]').first()\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('img[alt*=\"Ksero\"]').first()\u001b[22m\n\n\n\u001b[0m \u001b[90m 89 |\u001b[39m     \u001b[36mawait\u001b[39m test\u001b[33m.\u001b[39mstep(\u001b[32m'Verificar imagen hero'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n \u001b[90m 90 |\u001b[39m       \u001b[36mconst\u001b[39m heroImage \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'img[alt*=\"Ksero\"]'\u001b[39m)\u001b[33m.\u001b[39mfirst()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 91 |\u001b[39m       \u001b[36mawait\u001b[39m expect(heroImage)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 92 |\u001b[39m       \n \u001b[90m 93 |\u001b[39m       \u001b[90m// Validación técnica: verificar que la imagen cargó correctamente\u001b[39m\n \u001b[90m 94 |\u001b[39m       \u001b[36mconst\u001b[39m imageLoaded \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m heroImage\u001b[33m.\u001b[39mevaluate((img) \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[2m    at C:\\Users\\sebas\\OneDrive\\Escritorio\\automatizacion-ksero\\tests\\home.spec.js:91:31\u001b[22m\n\u001b[2m    at C:\\Users\\sebas\\OneDrive\\Escritorio\\automatizacion-ksero\\tests\\home.spec.js:89:16\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 1,
+                      "steps": [
+                        {
+                          "title": "Verificar título principal",
+                          "duration": 100
+                        },
+                        {
+                          "title": "Verificar botón \"Ver Planes\"",
+                          "duration": 103
+                        },
+                        {
+                          "title": "Verificar botón \"Ver Menú\"",
+                          "duration": 28
+                        },
+                        {
+                          "title": "Verificar sección de beneficios",
+                          "duration": 155
+                        },
+                        {
+                          "title": "Verificar imagen hero",
+                          "duration": 5020,
+                          "error": {
+                            "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('img[alt*=\"Ksero\"]').first()\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('img[alt*=\"Ksero\"]').first()\u001b[22m\n",
+                            "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('img[alt*=\"Ksero\"]').first()\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('img[alt*=\"Ksero\"]').first()\u001b[22m\n\n    at C:\\Users\\sebas\\OneDrive\\Escritorio\\automatizacion-ksero\\tests\\home.spec.js:91:31\n    at C:\\Users\\sebas\\OneDrive\\Escritorio\\automatizacion-ksero\\tests\\home.spec.js:89:16",
+                            "location": {
+                              "file": "C:\\Users\\sebas\\OneDrive\\Escritorio\\automatizacion-ksero\\tests\\home.spec.js",
+                              "column": 31,
+                              "line": 91
+                            },
+                            "snippet": "\u001b[0m \u001b[90m 89 |\u001b[39m     \u001b[36mawait\u001b[39m test\u001b[33m.\u001b[39mstep(\u001b[32m'Verificar imagen hero'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n \u001b[90m 90 |\u001b[39m       \u001b[36mconst\u001b[39m heroImage \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'img[alt*=\"Ksero\"]'\u001b[39m)\u001b[33m.\u001b[39mfirst()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 91 |\u001b[39m       \u001b[36mawait\u001b[39m expect(heroImage)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 92 |\u001b[39m       \n \u001b[90m 93 |\u001b[39m       \u001b[90m// Validación técnica: verificar que la imagen cargó correctamente\u001b[39m\n \u001b[90m 94 |\u001b[39m       \u001b[36mconst\u001b[39m imageLoaded \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m heroImage\u001b[33m.\u001b[39mevaluate((img) \u001b[33m=>\u001b[39m {\u001b[0m"
+                          }
+                        }
+                      ],
+                      "startTime": "2025-10-27T22:19:46.582Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\sebas\\OneDrive\\Escritorio\\automatizacion-ksero\\test-results\\home-CP-01-Verificación-de-113c3-ales-de-la-página-de-inicio-Mobile-Chrome-retry1\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\sebas\\OneDrive\\Escritorio\\automatizacion-ksero\\test-results\\home-CP-01-Verificación-de-113c3-ales-de-la-página-de-inicio-Mobile-Chrome-retry1\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\sebas\\OneDrive\\Escritorio\\automatizacion-ksero\\test-results\\home-CP-01-Verificación-de-113c3-ales-de-la-página-de-inicio-Mobile-Chrome-retry1\\error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\sebas\\OneDrive\\Escritorio\\automatizacion-ksero\\test-results\\home-CP-01-Verificación-de-113c3-ales-de-la-página-de-inicio-Mobile-Chrome-retry1\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\sebas\\OneDrive\\Escritorio\\automatizacion-ksero\\tests\\home.spec.js",
+                        "column": 31,
+                        "line": 91
+                      }
+                    },
+                    {
+                      "workerIndex": 14,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 7532,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('img[alt*=\"Ksero\"]').first()\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('img[alt*=\"Ksero\"]').first()\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('img[alt*=\"Ksero\"]').first()\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('img[alt*=\"Ksero\"]').first()\u001b[22m\n\n    at C:\\Users\\sebas\\OneDrive\\Escritorio\\automatizacion-ksero\\tests\\home.spec.js:91:31\n    at C:\\Users\\sebas\\OneDrive\\Escritorio\\automatizacion-ksero\\tests\\home.spec.js:89:16",
+                        "location": {
+                          "file": "C:\\Users\\sebas\\OneDrive\\Escritorio\\automatizacion-ksero\\tests\\home.spec.js",
+                          "column": 31,
+                          "line": 91
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 89 |\u001b[39m     \u001b[36mawait\u001b[39m test\u001b[33m.\u001b[39mstep(\u001b[32m'Verificar imagen hero'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n \u001b[90m 90 |\u001b[39m       \u001b[36mconst\u001b[39m heroImage \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'img[alt*=\"Ksero\"]'\u001b[39m)\u001b[33m.\u001b[39mfirst()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 91 |\u001b[39m       \u001b[36mawait\u001b[39m expect(heroImage)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 92 |\u001b[39m       \n \u001b[90m 93 |\u001b[39m       \u001b[90m// Validación técnica: verificar que la imagen cargó correctamente\u001b[39m\n \u001b[90m 94 |\u001b[39m       \u001b[36mconst\u001b[39m imageLoaded \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m heroImage\u001b[33m.\u001b[39mevaluate((img) \u001b[33m=>\u001b[39m {\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\sebas\\OneDrive\\Escritorio\\automatizacion-ksero\\tests\\home.spec.js",
+                            "column": 31,
+                            "line": 91
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('img[alt*=\"Ksero\"]').first()\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('img[alt*=\"Ksero\"]').first()\u001b[22m\n\n\n\u001b[0m \u001b[90m 89 |\u001b[39m     \u001b[36mawait\u001b[39m test\u001b[33m.\u001b[39mstep(\u001b[32m'Verificar imagen hero'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n \u001b[90m 90 |\u001b[39m       \u001b[36mconst\u001b[39m heroImage \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'img[alt*=\"Ksero\"]'\u001b[39m)\u001b[33m.\u001b[39mfirst()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 91 |\u001b[39m       \u001b[36mawait\u001b[39m expect(heroImage)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 92 |\u001b[39m       \n \u001b[90m 93 |\u001b[39m       \u001b[90m// Validación técnica: verificar que la imagen cargó correctamente\u001b[39m\n \u001b[90m 94 |\u001b[39m       \u001b[36mconst\u001b[39m imageLoaded \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m heroImage\u001b[33m.\u001b[39mevaluate((img) \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[2m    at C:\\Users\\sebas\\OneDrive\\Escritorio\\automatizacion-ksero\\tests\\home.spec.js:91:31\u001b[22m\n\u001b[2m    at C:\\Users\\sebas\\OneDrive\\Escritorio\\automatizacion-ksero\\tests\\home.spec.js:89:16\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 2,
+                      "steps": [
+                        {
+                          "title": "Verificar título principal",
+                          "duration": 68
+                        },
+                        {
+                          "title": "Verificar botón \"Ver Planes\"",
+                          "duration": 64
+                        },
+                        {
+                          "title": "Verificar botón \"Ver Menú\"",
+                          "duration": 13
+                        },
+                        {
+                          "title": "Verificar sección de beneficios",
+                          "duration": 88
+                        },
+                        {
+                          "title": "Verificar imagen hero",
+                          "duration": 5011,
+                          "error": {
+                            "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('img[alt*=\"Ksero\"]').first()\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('img[alt*=\"Ksero\"]').first()\u001b[22m\n",
+                            "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('img[alt*=\"Ksero\"]').first()\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('img[alt*=\"Ksero\"]').first()\u001b[22m\n\n    at C:\\Users\\sebas\\OneDrive\\Escritorio\\automatizacion-ksero\\tests\\home.spec.js:91:31\n    at C:\\Users\\sebas\\OneDrive\\Escritorio\\automatizacion-ksero\\tests\\home.spec.js:89:16",
+                            "location": {
+                              "file": "C:\\Users\\sebas\\OneDrive\\Escritorio\\automatizacion-ksero\\tests\\home.spec.js",
+                              "column": 31,
+                              "line": 91
+                            },
+                            "snippet": "\u001b[0m \u001b[90m 89 |\u001b[39m     \u001b[36mawait\u001b[39m test\u001b[33m.\u001b[39mstep(\u001b[32m'Verificar imagen hero'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n \u001b[90m 90 |\u001b[39m       \u001b[36mconst\u001b[39m heroImage \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'img[alt*=\"Ksero\"]'\u001b[39m)\u001b[33m.\u001b[39mfirst()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 91 |\u001b[39m       \u001b[36mawait\u001b[39m expect(heroImage)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 92 |\u001b[39m       \n \u001b[90m 93 |\u001b[39m       \u001b[90m// Validación técnica: verificar que la imagen cargó correctamente\u001b[39m\n \u001b[90m 94 |\u001b[39m       \u001b[36mconst\u001b[39m imageLoaded \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m heroImage\u001b[33m.\u001b[39mevaluate((img) \u001b[33m=>\u001b[39m {\u001b[0m"
+                          }
+                        }
+                      ],
+                      "startTime": "2025-10-27T22:19:59.524Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\sebas\\OneDrive\\Escritorio\\automatizacion-ksero\\test-results\\home-CP-01-Verificación-de-113c3-ales-de-la-página-de-inicio-Mobile-Chrome-retry2\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\sebas\\OneDrive\\Escritorio\\automatizacion-ksero\\test-results\\home-CP-01-Verificación-de-113c3-ales-de-la-página-de-inicio-Mobile-Chrome-retry2\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\sebas\\OneDrive\\Escritorio\\automatizacion-ksero\\test-results\\home-CP-01-Verificación-de-113c3-ales-de-la-página-de-inicio-Mobile-Chrome-retry2\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\sebas\\OneDrive\\Escritorio\\automatizacion-ksero\\tests\\home.spec.js",
+                        "column": 31,
+                        "line": 91
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "379953442ddfc3019abd-41858e75b61c9b8c8bb4",
+              "file": "home.spec.js",
+              "line": 22,
+              "column": 3
+            },
+            {
+              "title": "la página debe cargar en menos de 3 segundos",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Mobile Chrome",
+                  "projectName": "Mobile Chrome",
+                  "results": [
+                    {
+                      "workerIndex": 15,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2150,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "✓ Tiempo de carga: 105ms\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-10-27T22:20:09.708Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "379953442ddfc3019abd-7cb0f578bec473eb515b",
+              "file": "home.spec.js",
+              "line": 104,
+              "column": 3
+            },
+            {
+              "title": "debe ser responsive en diferentes tamaños de pantalla",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Mobile Chrome",
+                  "projectName": "Mobile Chrome",
+                  "results": [
+                    {
+                      "workerIndex": 15,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1963,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-10-27T22:20:12.334Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "379953442ddfc3019abd-7084a69def2ab4ea38e5",
+              "file": "home.spec.js",
+              "line": 119,
+              "column": 3
+            },
+            {
+              "title": "los botones deben cambiar de estilo en hover",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Mobile Chrome",
+                  "projectName": "Mobile Chrome",
+                  "results": [
+                    {
+                      "workerIndex": 15,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2196,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Color inicial: rgb(22, 163, 74), Color hover: rgb(21, 128, 61)\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-10-27T22:20:14.331Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "379953442ddfc3019abd-3cb0ecf027372bbf39c9",
+              "file": "home.spec.js",
+              "line": 137,
+              "column": 3
+            },
+            {
+              "title": "debe cumplir con estándares básicos de accesibilidad",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Mobile Chrome",
+                  "projectName": "Mobile Chrome",
+                  "results": [
+                    {
+                      "workerIndex": 15,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1764,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-10-27T22:20:19.722Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "379953442ddfc3019abd-f98e629f0d79223056c2",
+              "file": "home.spec.js",
+              "line": 194,
+              "column": 3
+            }
+          ],
+          "suites": [
+            {
+              "title": "Casos negativos y de borde",
+              "file": "home.spec.js",
+              "line": 164,
+              "column": 8,
+              "specs": [
+                {
+                  "title": "debe manejar errores de red gracefully",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 3,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 2439,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-27T22:17:01.795Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "379953442ddfc3019abd-bc6a296813dddc98a471",
+                  "file": "home.spec.js",
+                  "line": 166,
+                  "column": 5
+                },
+                {
+                  "title": "debe funcionar en resolución mínima (320px)",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 3,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 1317,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-27T22:17:04.263Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "379953442ddfc3019abd-4ad046d930708c10e61f",
+                  "file": "home.spec.js",
+                  "line": 177,
+                  "column": 5
+                },
+                {
+                  "title": "debe manejar errores de red gracefully",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "firefox",
+                      "projectName": "firefox",
+                      "results": [
+                        {
+                          "workerIndex": 7,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 3921,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-27T22:18:22.016Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "379953442ddfc3019abd-d7958f195076f9fff0ce",
+                  "file": "home.spec.js",
+                  "line": 166,
+                  "column": 5
+                },
+                {
+                  "title": "debe funcionar en resolución mínima (320px)",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "firefox",
+                      "projectName": "firefox",
+                      "results": [
+                        {
+                          "workerIndex": 7,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 3742,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-27T22:18:25.967Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "379953442ddfc3019abd-2e276a9352bf1887ec0d",
+                  "file": "home.spec.js",
+                  "line": 177,
+                  "column": 5
+                },
+                {
+                  "title": "debe manejar errores de red gracefully",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "webkit",
+                      "projectName": "webkit",
+                      "results": [
+                        {
+                          "workerIndex": 11,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 1880,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-27T22:19:23.887Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "379953442ddfc3019abd-22994e94ff272a744cbc",
+                  "file": "home.spec.js",
+                  "line": 166,
+                  "column": 5
+                },
+                {
+                  "title": "debe funcionar en resolución mínima (320px)",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "webkit",
+                      "projectName": "webkit",
+                      "results": [
+                        {
+                          "workerIndex": 11,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 1635,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-27T22:19:25.807Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "379953442ddfc3019abd-d57daff6128f2b279375",
+                  "file": "home.spec.js",
+                  "line": 177,
+                  "column": 5
+                },
+                {
+                  "title": "debe manejar errores de red gracefully",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "Mobile Chrome",
+                      "projectName": "Mobile Chrome",
+                      "results": [
+                        {
+                          "workerIndex": 15,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 1461,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-27T22:20:16.554Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "379953442ddfc3019abd-f4967f9e1ca477841fa3",
+                  "file": "home.spec.js",
+                  "line": 166,
+                  "column": 5
+                },
+                {
+                  "title": "debe funcionar en resolución mínima (320px)",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "Mobile Chrome",
+                      "projectName": "Mobile Chrome",
+                      "results": [
+                        {
+                          "workerIndex": 15,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 1650,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-10-27T22:20:18.043Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "379953442ddfc3019abd-980eb44766ead74fd204",
+                  "file": "home.spec.js",
+                  "line": 177,
+                  "column": 5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Trazabilidad con HU-01",
+          "file": "home.spec.js",
+          "line": 216,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Criterio 1: debo ver el título \"Cocinamos tu tranquilidad\"",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 875,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-10-27T22:17:07.132Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "379953442ddfc3019abd-ea74a8631deca9db24a2",
+              "file": "home.spec.js",
+              "line": 218,
+              "column": 3
+            },
+            {
+              "title": "Criterio 2: debo ver los botones \"Ver Planes\" y \"Ver Menú\"",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 759,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-10-27T22:17:08.027Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "379953442ddfc3019abd-97be62b64c2d847eb11a",
+              "file": "home.spec.js",
+              "line": 224,
+              "column": 3
+            },
+            {
+              "title": "Criterio 3: debo ver la sección de beneficios con 4 características",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 880,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-10-27T22:17:08.812Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "379953442ddfc3019abd-2a2b0564845c130bf9f6",
+              "file": "home.spec.js",
+              "line": 230,
+              "column": 3
+            },
+            {
+              "title": "Criterio 1: debo ver el título \"Cocinamos tu tranquilidad\"",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 7,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3061,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-10-27T22:18:33.629Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "379953442ddfc3019abd-9cec6f4626feaa76f8b1",
+              "file": "home.spec.js",
+              "line": 218,
+              "column": 3
+            },
+            {
+              "title": "Criterio 2: debo ver los botones \"Ver Planes\" y \"Ver Menú\"",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 7,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3256,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-10-27T22:18:36.715Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "379953442ddfc3019abd-f19cca306b215e4ea525",
+              "file": "home.spec.js",
+              "line": 224,
+              "column": 3
+            },
+            {
+              "title": "Criterio 3: debo ver la sección de beneficios con 4 características",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 7,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3276,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-10-27T22:18:39.995Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "379953442ddfc3019abd-5f4d3ffc886f52499d17",
+              "file": "home.spec.js",
+              "line": 230,
+              "column": 3
+            },
+            {
+              "title": "Criterio 1: debo ver el título \"Cocinamos tu tranquilidad\"",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 11,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1364,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-10-27T22:19:29.505Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "379953442ddfc3019abd-f240c20b22dae46b609c",
+              "file": "home.spec.js",
+              "line": 218,
+              "column": 3
+            },
+            {
+              "title": "Criterio 2: debo ver los botones \"Ver Planes\" y \"Ver Menú\"",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 11,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1418,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-10-27T22:19:30.911Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "379953442ddfc3019abd-37ac9ed1797e75bae328",
+              "file": "home.spec.js",
+              "line": 224,
+              "column": 3
+            },
+            {
+              "title": "Criterio 3: debo ver la sección de beneficios con 4 características",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 11,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1544,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-10-27T22:19:32.363Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "379953442ddfc3019abd-370de30198ea916eb3fd",
+              "file": "home.spec.js",
+              "line": 230,
+              "column": 3
+            },
+            {
+              "title": "Criterio 1: debo ver el título \"Cocinamos tu tranquilidad\"",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Mobile Chrome",
+                  "projectName": "Mobile Chrome",
+                  "results": [
+                    {
+                      "workerIndex": 15,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1198,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-10-27T22:20:21.514Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "379953442ddfc3019abd-d0a13d77e4be74d7559e",
+              "file": "home.spec.js",
+              "line": 218,
+              "column": 3
+            },
+            {
+              "title": "Criterio 2: debo ver los botones \"Ver Planes\" y \"Ver Menú\"",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Mobile Chrome",
+                  "projectName": "Mobile Chrome",
+                  "results": [
+                    {
+                      "workerIndex": 15,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1137,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-10-27T22:20:22.742Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "379953442ddfc3019abd-b21eda9b160f1b2b8473",
+              "file": "home.spec.js",
+              "line": 224,
+              "column": 3
+            },
+            {
+              "title": "Criterio 3: debo ver la sección de beneficios con 4 características",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Mobile Chrome",
+                  "projectName": "Mobile Chrome",
+                  "results": [
+                    {
+                      "workerIndex": 15,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1088,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-10-27T22:20:23.907Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "379953442ddfc3019abd-ba29bec1321fdb02cb46",
+              "file": "home.spec.js",
+              "line": 230,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2025-10-27T22:16:13.080Z",
+    "duration": 252792.65000000002,
+    "expected": 36,
+    "skipped": 0,
+    "unexpected": 4,
+    "flaky": 0
+  }
+}

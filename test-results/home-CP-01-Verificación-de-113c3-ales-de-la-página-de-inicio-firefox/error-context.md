@@ -1,0 +1,51 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e3]:
+  - navigation [ref=e4]:
+    - generic [ref=e7]:
+      - generic [ref=e9]: Ksero
+      - generic [ref=e10]:
+        - link "Inicio" [ref=e11] [cursor=pointer]:
+          - /url: /
+        - link "Menú" [ref=e12] [cursor=pointer]:
+          - /url: /menu
+        - link "Planes" [ref=e13] [cursor=pointer]:
+          - /url: /planes
+        - link "Contacto" [ref=e14] [cursor=pointer]:
+          - /url: /contacto
+  - generic [ref=e16]:
+    - main [ref=e18]:
+      - generic [ref=e19]:
+        - heading "Cocinamos tu tranquilidad" [level=1] [ref=e20]:
+          - generic [ref=e21]: Cocinamos tu
+          - generic [ref=e22]: tranquilidad
+        - paragraph [ref=e23]: Platos caseros, saludables y deliciosos, preparados en paquetes diarios o semanales para facilitar tu alimentación en el Valle de Aburrá.
+        - generic [ref=e24]:
+          - link "Ver Planes" [ref=e26] [cursor=pointer]:
+            - /url: /planes
+          - link "Ver Menú" [ref=e28] [cursor=pointer]:
+            - /url: /menu
+    - img "Platos saludables preparados" [ref=e30]
+  - generic [ref=e32]:
+    - generic [ref=e33]:
+      - heading "Beneficios" [level=2] [ref=e34]
+      - paragraph [ref=e35]: ¿Por qué elegir Ksero?
+    - generic [ref=e37]:
+      - generic [ref=e38]:
+        - img [ref=e40]
+        - paragraph [ref=e42]: Comida Saludable
+        - paragraph [ref=e43]: Platos nutritivos y balanceados, preparados con ingredientes frescos y de alta calidad.
+      - generic [ref=e44]:
+        - img [ref=e46]
+        - paragraph [ref=e48]: Ahorra Tiempo
+        - paragraph [ref=e49]: Olvídate de cocinar y planificar tus comidas. Nosotros nos encargamos de todo.
+      - generic [ref=e50]:
+        - img [ref=e52]
+        - paragraph [ref=e54]: Variedad de Menús
+        - paragraph [ref=e55]: Diferentes opciones para todos los gustos y necesidades dietéticas.
+      - generic [ref=e56]:
+        - img [ref=e58]
+        - paragraph [ref=e60]: Entrega a Domicilio
+        - paragraph [ref=e61]: Llevamos tus platos frescos directamente a tu puerta en el Valle de Aburrá.
+```
