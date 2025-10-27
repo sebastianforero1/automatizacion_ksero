@@ -1,0 +1,41 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e3]:
+  - navigation [ref=e4]:
+    - generic [ref=e9]: Ksero
+  - generic [ref=e11]:
+    - main [ref=e13]:
+      - generic [ref=e14]:
+        - heading "Cocinamos tu tranquilidad" [level=1] [ref=e15]:
+          - generic [ref=e16]: Cocinamos tu
+          - generic [ref=e17]: tranquilidad
+        - paragraph [ref=e18]: Platos caseros, saludables y deliciosos, preparados en paquetes diarios o semanales para facilitar tu alimentación en el Valle de Aburrá.
+        - generic [ref=e19]:
+          - link "Ver Planes" [ref=e21] [cursor=pointer]:
+            - /url: /planes
+          - link "Ver Menú" [ref=e23] [cursor=pointer]:
+            - /url: /menu
+    - img "Platos saludables preparados" [ref=e25]
+  - generic [ref=e27]:
+    - generic [ref=e28]:
+      - heading "Beneficios" [level=2] [ref=e29]
+      - paragraph [ref=e30]: ¿Por qué elegir Ksero?
+    - generic [ref=e32]:
+      - generic [ref=e33]:
+        - img [ref=e35]
+        - paragraph [ref=e37]: Comida Saludable
+        - paragraph [ref=e38]: Platos nutritivos y balanceados, preparados con ingredientes frescos y de alta calidad.
+      - generic [ref=e39]:
+        - img [ref=e41]
+        - paragraph [ref=e43]: Ahorra Tiempo
+        - paragraph [ref=e44]: Olvídate de cocinar y planificar tus comidas. Nosotros nos encargamos de todo.
+      - generic [ref=e45]:
+        - img [ref=e47]
+        - paragraph [ref=e49]: Variedad de Menús
+        - paragraph [ref=e50]: Diferentes opciones para todos los gustos y necesidades dietéticas.
+      - generic [ref=e51]:
+        - img [ref=e53]
+        - paragraph [ref=e55]: Entrega a Domicilio
+        - paragraph [ref=e56]: Llevamos tus platos frescos directamente a tu puerta en el Valle de Aburrá.
+```
